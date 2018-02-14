@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "SquareArea", "SquareArea\SquareArea.vbproj", "{C24B9FC0-C115-4A3B-A9CC-541A51ABDD19}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C24B9FC0-C115-4A3B-A9CC-541A51ABDD19}.Debug|x86.ActiveCfg = Debug|x86
+		{C24B9FC0-C115-4A3B-A9CC-541A51ABDD19}.Debug|x86.Build.0 = Debug|x86
+		{C24B9FC0-C115-4A3B-A9CC-541A51ABDD19}.Release|x86.ActiveCfg = Release|x86
+		{C24B9FC0-C115-4A3B-A9CC-541A51ABDD19}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
