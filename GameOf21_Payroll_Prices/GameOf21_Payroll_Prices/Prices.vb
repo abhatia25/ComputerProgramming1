@@ -1,3 +1,3 @@
-﻿Public Class Prices
+﻿Public Class frmPrices
 
 End Class
