@@ -13,7 +13,11 @@ Public Class frmNumberOfDigits
                 Me.lblAnswer.Text = "The number is a one digit number."
             Case -99 To 99  'two digit number
                 Me.lblAnswer.Text = "The number is a two digit number."
-            Case Else       'more than 2 digits
+            Case -999 To 999 'three digit number
+                Me.lblAnswer.Text = "The number is a three digit number."
+            Case -9999 To 9999 'four digit number
+                Me.lblAnswer.Text = "The number is a four digit number."
+            Case Else       'more than four digits
                 Me.lblAnswer.Text = "Number out of range."
         End Select
     End Sub

@@ -1,21 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{D86B2613-DA17-4C0A-86CE-55E7ADC6DC3B}</ProjectGuid>
+    <ProjectGuid>{B356B703-A5B0-4B41-A65A-67B53A9D6435}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>WindowsApplication1.My.MyApplication</StartupObject>
-    <RootNamespace>WindowsApplication1</RootNamespace>
-    <AssemblyName>Bikes</AssemblyName>
+    <StartupObject>_5._01_Programming_Errors.My.MyApplication</StartupObject>
+    <RootNamespace>_5._01_Programming_Errors</RootNamespace>
+    <AssemblyName>5.01 Programming Errors</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
-    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
-    <TargetFrameworkProfile>
-    </TargetFrameworkProfile>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
     <PlatformTarget>x86</PlatformTarget>
@@ -24,9 +23,8 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>Bikes.xml</DocumentationFile>
+    <DocumentationFile>5.01 Programming Errors.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
-    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
     <PlatformTarget>x86</PlatformTarget>
@@ -35,9 +33,8 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>Bikes.xml</DocumentationFile>
+    <DocumentationFile>5.01 Programming Errors.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
-    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup>
     <OptionExplicit>On</OptionExplicit>
@@ -75,11 +72,41 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Bikes.vb">
+    <Compile Include="BowlingScores.Designer.vb">
+      <DependentUpon>BowlingScores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BowlingScores.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Bikes.Designer.vb">
-      <DependentUpon>Bikes.vb</DependentUpon>
+    <Compile Include="ComplierErrors.Designer.vb">
+      <DependentUpon>ComplierErrors.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ComplierErrors.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ComputerTroubleshooting.Designer.vb">
+      <DependentUpon>ComputerTroubleshooting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ComputerTroubleshooting.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Initials.Designer.vb">
+      <DependentUpon>Initials.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Initials.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Monogram.Designer.vb">
+      <DependentUpon>Monogram.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Monogram.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PackageCheck.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PackageCheck.Designer.vb">
+      <DependentUpon>PackageCheck.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -99,8 +126,20 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Bikes.resx">
-      <DependentUpon>Bikes.vb</DependentUpon>
+    <EmbeddedResource Include="BowlingScores.resx">
+      <DependentUpon>BowlingScores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComplierErrors.resx">
+      <DependentUpon>ComplierErrors.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComputerTroubleshooting.resx">
+      <DependentUpon>ComputerTroubleshooting.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Initials.resx">
+      <DependentUpon>Initials.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Monogram.resx">
+      <DependentUpon>Monogram.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -108,9 +147,11 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="PackageCheck.resx">
+      <DependentUpon>PackageCheck.vb</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="app.config" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
