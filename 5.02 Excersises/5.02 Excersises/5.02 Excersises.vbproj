@@ -1,38 +1,39 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{7DE7FF28-05BE-49FF-BC1A-00EE3B4AA82D}</ProjectGuid>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{20089D4B-5351-40D4-999A-F5BF51D677F9}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>Comic_Strip.My.MyApplication</StartupObject>
-    <RootNamespace>Comic_Strip</RootNamespace>
-    <AssemblyName>Comic Strip</AssemblyName>
+    <StartupObject>_5._02_Excersises.My.MyApplication</StartupObject>
+    <RootNamespace>_5._02_Excersises</RootNamespace>
+    <AssemblyName>5.02 Excersises</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <TargetFrameworkProfile>Client</TargetFrameworkProfile>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>Comic Strip.xml</DocumentationFile>
+    <DocumentationFile>5.02 Excersises.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <DefineDebug>false</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>Comic Strip.xml</DocumentationFile>
+    <DocumentationFile>5.02 Excersises.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
@@ -57,7 +58,6 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="System.Net.Http" />
   </ItemGroup>
   <ItemGroup>
     <Import Include="Microsoft.VisualBasic" />
@@ -70,16 +70,8 @@
     <Import Include="System.Windows.Forms" />
     <Import Include="System.Linq" />
     <Import Include="System.Xml.Linq" />
-    <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Offense.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Offense.Designer.vb">
-      <DependentUpon>Offense.vb</DependentUpon>
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -95,16 +87,28 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="Defense.Designer.vb">
-      <DependentUpon>Defense.vb</DependentUpon>
+    <Compile Include="Perimeter.Designer.vb">
+      <DependentUpon>Perimeter.vb</DependentUpon>
     </Compile>
-    <Compile Include="Defense.vb">
+    <Compile Include="Perimeter.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Offense2.Designer.vb">
-      <DependentUpon>Offense2.vb</DependentUpon>
+    <Compile Include="SlotMachine.designer.vb">
+      <DependentUpon>SlotMachine.vb</DependentUpon>
     </Compile>
-    <Compile Include="Offense2.vb">
+    <Compile Include="SlotMachine.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TheBirthdayProgram.designer.vb">
+      <DependentUpon>TheBirthdayProgram.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TheBirthdayProgram.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UniqueNumbers.Designer.vb">
+      <DependentUpon>UniqueNumbers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UniqueNumbers.vb">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
@@ -115,14 +119,17 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Offense.resx">
-      <DependentUpon>Offense.vb</DependentUpon>
+    <EmbeddedResource Include="Perimeter.resx">
+      <DependentUpon>Perimeter.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Defense.resx">
-      <DependentUpon>Defense.vb</DependentUpon>
+    <EmbeddedResource Include="SlotMachine.resx">
+      <DependentUpon>SlotMachine.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Offense2.resx">
-      <DependentUpon>Offense2.vb</DependentUpon>
+    <EmbeddedResource Include="TheBirthdayProgram.resx">
+      <DependentUpon>TheBirthdayProgram.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UniqueNumbers.resx">
+      <DependentUpon>UniqueNumbers.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -135,13 +142,13 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\football.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\footballfield.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
 </Project>

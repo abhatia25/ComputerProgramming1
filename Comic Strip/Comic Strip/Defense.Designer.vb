@@ -22,7 +22,6 @@ Partial Class frmDefense
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.picFootball = New System.Windows.Forms.PictureBox()
         Me.lblMessage = New System.Windows.Forms.Label()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -36,22 +35,14 @@ Partial Class frmDefense
         Me.btnKickoff = New System.Windows.Forms.Button()
         Me.grpKickoff = New System.Windows.Forms.GroupBox()
         Me.btnOffense = New System.Windows.Forms.Button()
-        CType(Me.picFootball, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.picFootballField = New System.Windows.Forms.PictureBox()
+        Me.picFootball = New System.Windows.Forms.PictureBox()
         Me.MenuStrip1.SuspendLayout()
         Me.grpDefense.SuspendLayout()
         Me.grpKickoff.SuspendLayout()
+        CType(Me.picFootballField, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picFootball, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'picFootball
-        '
-        Me.picFootball.BackgroundImage = Global.Comic_Strip.My.Resources.Resources.football
-        Me.picFootball.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.picFootball.Location = New System.Drawing.Point(216, 75)
-        Me.picFootball.Name = "picFootball"
-        Me.picFootball.Size = New System.Drawing.Size(96, 97)
-        Me.picFootball.TabIndex = 8
-        Me.picFootball.TabStop = False
-        Me.picFootball.Visible = False
         '
         'lblMessage
         '
@@ -182,11 +173,34 @@ Partial Class frmDefense
         Me.btnOffense.UseVisualStyleBackColor = True
         Me.btnOffense.Visible = False
         '
+        'picFootballField
+        '
+        Me.picFootballField.BackgroundImage = Global.Comic_Strip.My.Resources.Resources.footballfield
+        Me.picFootballField.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.picFootballField.Location = New System.Drawing.Point(12, 138)
+        Me.picFootballField.Name = "picFootballField"
+        Me.picFootballField.Size = New System.Drawing.Size(154, 169)
+        Me.picFootballField.TabIndex = 14
+        Me.picFootballField.TabStop = False
+        Me.picFootballField.Visible = False
+        '
+        'picFootball
+        '
+        Me.picFootball.BackgroundImage = Global.Comic_Strip.My.Resources.Resources.football
+        Me.picFootball.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.picFootball.Location = New System.Drawing.Point(216, 75)
+        Me.picFootball.Name = "picFootball"
+        Me.picFootball.Size = New System.Drawing.Size(96, 97)
+        Me.picFootball.TabIndex = 8
+        Me.picFootball.TabStop = False
+        Me.picFootball.Visible = False
+        '
         'frmDefense
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(527, 448)
+        Me.Controls.Add(Me.picFootballField)
         Me.Controls.Add(Me.picFootball)
         Me.Controls.Add(Me.lblMessage)
         Me.Controls.Add(Me.MenuStrip1)
@@ -196,13 +210,14 @@ Partial Class frmDefense
         Me.Controls.Add(Me.btnOffense)
         Me.Name = "frmDefense"
         Me.Text = "Defense"
-        CType(Me.picFootball, System.ComponentModel.ISupportInitialize).EndInit()
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
         Me.grpDefense.ResumeLayout(False)
         Me.grpDefense.PerformLayout()
         Me.grpKickoff.ResumeLayout(False)
         Me.grpKickoff.PerformLayout()
+        CType(Me.picFootballField, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picFootball, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -222,4 +237,5 @@ Partial Class frmDefense
     Friend WithEvents btnKickoff As Button
     Friend WithEvents grpKickoff As GroupBox
     Friend WithEvents btnOffense As Button
+    Friend WithEvents picFootballField As System.Windows.Forms.PictureBox
 End Class

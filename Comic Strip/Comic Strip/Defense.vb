@@ -89,6 +89,7 @@ Public Class frmDefense
             chkPass.Visible = True
             chkRun.Visible = True
         End If
+        picFootballField.Visible = True
     End Sub
 
     Private Sub chkRun_CheckedChanged(sender As Object, e As EventArgs) Handles chkRun.CheckedChanged

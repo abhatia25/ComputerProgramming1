@@ -91,6 +91,7 @@ Public Class frmOffense
             chkPass.Visible = True
             chkRun.Visible = True
         End If
+        picFootballField.Visible = True
     End Sub
 
     Private Sub chkRun_CheckedChanged(sender As Object, e As EventArgs) Handles chkRun.CheckedChanged
@@ -134,9 +135,11 @@ Public Class frmOffense
                 If driveyards < 10 Then
                     MessageBox.Show("It's the other team's ball")
                     Select Case GlobalVariables.pointsScored
-                        Case > 10
+                        Case Is > 20
                             MessageBox.Show("This was a high scoring game!")
-                        Case < 10
+                        Case Is = 20
+                            MessageBox.Show("This was a good game!")
+                        Case Is < 20
                             MessageBox.Show("This was a low scoring game!")
                     End Select
                     Me.Visible = False

@@ -26,7 +26,6 @@ Partial Class frmOffense
         Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.NextToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.lblMessage = New System.Windows.Forms.Label()
-        Me.picFootball = New System.Windows.Forms.PictureBox()
         Me.grpKickoff = New System.Windows.Forms.GroupBox()
         Me.radTouchback = New System.Windows.Forms.RadioButton()
         Me.radFairCatch = New System.Windows.Forms.RadioButton()
@@ -36,10 +35,13 @@ Partial Class frmOffense
         Me.chkRun = New System.Windows.Forms.CheckBox()
         Me.btnOffense = New System.Windows.Forms.Button()
         Me.btnKickoff = New System.Windows.Forms.Button()
+        Me.picFootball = New System.Windows.Forms.PictureBox()
+        Me.picFootballField = New System.Windows.Forms.PictureBox()
         Me.MenuStrip1.SuspendLayout()
-        CType(Me.picFootball, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.grpKickoff.SuspendLayout()
         Me.grpOffense.SuspendLayout()
+        CType(Me.picFootball, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picFootballField, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'MenuStrip1
@@ -70,17 +72,6 @@ Partial Class frmOffense
         Me.lblMessage.Size = New System.Drawing.Size(503, 32)
         Me.lblMessage.TabIndex = 1
         Me.lblMessage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'picFootball
-        '
-        Me.picFootball.BackgroundImage = Global.Comic_Strip.My.Resources.Resources.football
-        Me.picFootball.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.picFootball.Location = New System.Drawing.Point(216, 69)
-        Me.picFootball.Name = "picFootball"
-        Me.picFootball.Size = New System.Drawing.Size(96, 97)
-        Me.picFootball.TabIndex = 2
-        Me.picFootball.TabStop = False
-        Me.picFootball.Visible = False
         '
         'grpKickoff
         '
@@ -182,11 +173,34 @@ Partial Class frmOffense
         Me.btnKickoff.UseVisualStyleBackColor = True
         Me.btnKickoff.Visible = False
         '
+        'picFootball
+        '
+        Me.picFootball.BackgroundImage = Global.Comic_Strip.My.Resources.Resources.football
+        Me.picFootball.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.picFootball.Location = New System.Drawing.Point(216, 69)
+        Me.picFootball.Name = "picFootball"
+        Me.picFootball.Size = New System.Drawing.Size(96, 97)
+        Me.picFootball.TabIndex = 2
+        Me.picFootball.TabStop = False
+        Me.picFootball.Visible = False
+        '
+        'picFootballField
+        '
+        Me.picFootballField.BackgroundImage = Global.Comic_Strip.My.Resources.Resources.footballfield
+        Me.picFootballField.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.picFootballField.Location = New System.Drawing.Point(12, 115)
+        Me.picFootballField.Name = "picFootballField"
+        Me.picFootballField.Size = New System.Drawing.Size(154, 169)
+        Me.picFootballField.TabIndex = 14
+        Me.picFootballField.TabStop = False
+        Me.picFootballField.Visible = False
+        '
         'frmOffense
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(527, 448)
+        Me.Controls.Add(Me.picFootballField)
         Me.Controls.Add(Me.grpOffense)
         Me.Controls.Add(Me.btnOffense)
         Me.Controls.Add(Me.btnKickoff)
@@ -199,11 +213,12 @@ Partial Class frmOffense
         Me.Text = "Offense"
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
-        CType(Me.picFootball, System.ComponentModel.ISupportInitialize).EndInit()
         Me.grpKickoff.ResumeLayout(False)
         Me.grpKickoff.PerformLayout()
         Me.grpOffense.ResumeLayout(False)
         Me.grpOffense.PerformLayout()
+        CType(Me.picFootball, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picFootballField, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -223,4 +238,5 @@ Partial Class frmOffense
     Friend WithEvents btnOffense As Button
     Friend WithEvents chkRun As CheckBox
     Friend WithEvents chkPass As CheckBox
+    Friend WithEvents picFootballField As System.Windows.Forms.PictureBox
 End Class
