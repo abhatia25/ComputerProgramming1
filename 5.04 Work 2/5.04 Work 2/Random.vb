@@ -9,9 +9,9 @@ Public Class frmRandom
     Private Sub btnGenerate_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnGenerate.Click
         Randomize()
         number1 = Rnd() * 1
-        number2 = Rnd() * 2147483647 + 1
-        number3 = Rnd() * 100 + 1
-        number4 = Rnd() * 50 + 11
+        number2 = Rnd() * 2147483646 + 1
+        number3 = Rnd() * 99 + 1
+        number4 = Rnd() * 49 + 11
         lblAnswer.Text = number1 & vbCrLf & number2 & vbCrLf & number3 & vbCrLf & number4
     End Sub
 

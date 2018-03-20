@@ -31,6 +31,6 @@ Public Class frmMyGrades
 
     Private Sub NextToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles NextToolStripMenuItem.Click
         Me.Visible = False
-
+        frmCellPhone.Visible = True
     End Sub
 End Class
