@@ -24,12 +24,12 @@ Partial Class frmLivingRoom
     Private Sub InitializeComponent()
         Me.btnIncorrect1 = New System.Windows.Forms.Button()
         Me.btnHint = New System.Windows.Forms.Button()
-        Me.lblCandyCounter = New System.Windows.Forms.Label()
         Me.btnIncorrect2 = New System.Windows.Forms.Button()
         Me.btnIncorrect3 = New System.Windows.Forms.Button()
         Me.btnCorrect = New System.Windows.Forms.Button()
         Me.picCandy = New System.Windows.Forms.PictureBox()
         Me.btnIncorrect4 = New System.Windows.Forms.Button()
+        Me.lblCandyCounter = New System.Windows.Forms.Label()
         CType(Me.picCandy, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -52,15 +52,6 @@ Partial Class frmLivingRoom
         Me.btnHint.TabIndex = 26
         Me.btnHint.Text = "Hint"
         Me.btnHint.UseVisualStyleBackColor = True
-        '
-        'lblCandyCounter
-        '
-        Me.lblCandyCounter.Font = New System.Drawing.Font("Showcard Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblCandyCounter.Location = New System.Drawing.Point(12, 9)
-        Me.lblCandyCounter.Name = "lblCandyCounter"
-        Me.lblCandyCounter.Size = New System.Drawing.Size(117, 47)
-        Me.lblCandyCounter.TabIndex = 25
-        Me.lblCandyCounter.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'btnIncorrect2
         '
@@ -117,6 +108,17 @@ Partial Class frmLivingRoom
         Me.btnIncorrect4.TabIndex = 33
         Me.btnIncorrect4.UseVisualStyleBackColor = False
         '
+        'lblCandyCounter
+        '
+        Me.lblCandyCounter.BackColor = System.Drawing.Color.Transparent
+        Me.lblCandyCounter.Font = New System.Drawing.Font("Showcard Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCandyCounter.ForeColor = System.Drawing.Color.Yellow
+        Me.lblCandyCounter.Location = New System.Drawing.Point(12, 9)
+        Me.lblCandyCounter.Name = "lblCandyCounter"
+        Me.lblCandyCounter.Size = New System.Drawing.Size(117, 47)
+        Me.lblCandyCounter.TabIndex = 34
+        Me.lblCandyCounter.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'frmLivingRoom
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -124,6 +126,7 @@ Partial Class frmLivingRoom
         Me.BackgroundImage = Global.Haunted_House_Project.My.Resources.Resources.Haunted_Living_Room
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(540, 458)
+        Me.Controls.Add(Me.lblCandyCounter)
         Me.Controls.Add(Me.btnIncorrect4)
         Me.Controls.Add(Me.picCandy)
         Me.Controls.Add(Me.btnCorrect)
@@ -131,7 +134,6 @@ Partial Class frmLivingRoom
         Me.Controls.Add(Me.btnIncorrect2)
         Me.Controls.Add(Me.btnIncorrect1)
         Me.Controls.Add(Me.btnHint)
-        Me.Controls.Add(Me.lblCandyCounter)
         Me.Name = "frmLivingRoom"
         Me.Text = "Living Room"
         CType(Me.picCandy, System.ComponentModel.ISupportInitialize).EndInit()
@@ -140,10 +142,10 @@ Partial Class frmLivingRoom
     End Sub
     Friend WithEvents btnIncorrect1 As System.Windows.Forms.Button
     Friend WithEvents btnHint As System.Windows.Forms.Button
-    Friend WithEvents lblCandyCounter As System.Windows.Forms.Label
     Friend WithEvents btnIncorrect2 As System.Windows.Forms.Button
     Friend WithEvents btnIncorrect3 As System.Windows.Forms.Button
     Friend WithEvents btnCorrect As System.Windows.Forms.Button
     Friend WithEvents picCandy As System.Windows.Forms.PictureBox
     Friend WithEvents btnIncorrect4 As System.Windows.Forms.Button
+    Friend WithEvents lblCandyCounter As System.Windows.Forms.Label
 End Class

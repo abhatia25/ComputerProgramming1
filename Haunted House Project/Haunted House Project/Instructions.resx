@@ -118,6 +118,6 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="lblInstructions.Text" xml:space="preserve">
-    <value>You are trapped in a haunted house and need to escape, however, in order to do this, you need to find all of the candy. In each room, there will be one hidden candy. You should click on objects to find the hidden candy. There also may be a timer for you to complete a certain task. If you do not complete the task before the timer runs out, you lose. To win, you must collect all 8 candies. There will be message boxes and hint buttons along the way to help you find the candy. Please press the done button once you are finished reading these instructions. Good luck!</value>
+    <value>You are trapped in a haunted house and need to escape, however, in order to do this, you need to find all of the candy. In each room, there will be one hidden candy. You should click on objects to find the hidden candy. There also may be a timer for you to complete a certain task. If you do not complete the task before the timer runs out, you lose.  To win, you must collect the candy from the room before the timer expires. There will be message boxes and hint buttons along the way to help you find the candy. Please press the done button once you are finished reading these instructions. Good luck!</value>
   </data>
 </root>

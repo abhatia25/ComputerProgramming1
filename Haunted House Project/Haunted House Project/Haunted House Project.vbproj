@@ -99,10 +99,40 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Attic.designer.vb">
+      <DependentUpon>Attic.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Attic.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Basement.designer.vb">
+      <DependentUpon>Basement.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Basement.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildBedroom.designer.vb">
+      <DependentUpon>ChildBedroom.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ChildBedroom.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EndForm.Designer.vb">
+      <DependentUpon>EndForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EndForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Foyer.Designer.vb">
       <DependentUpon>Foyer.vb</DependentUpon>
     </Compile>
     <Compile Include="Foyer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GameOver.Designer.vb">
+      <DependentUpon>GameOver.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GameOver.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Instructions.vb">
@@ -124,6 +154,12 @@
     <Compile Include="LivingRoom.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="MasterBedroom.designer.vb">
+      <DependentUpon>MasterBedroom.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MasterBedroom.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -141,8 +177,23 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Attic.resx">
+      <DependentUpon>Attic.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Basement.resx">
+      <DependentUpon>Basement.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildBedroom.resx">
+      <DependentUpon>ChildBedroom.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EndForm.resx">
+      <DependentUpon>EndForm.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Foyer.resx">
       <DependentUpon>Foyer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GameOver.resx">
+      <DependentUpon>GameOver.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Instructions.resx">
       <DependentUpon>Instructions.vb</DependentUpon>
@@ -153,11 +204,14 @@
     <EmbeddedResource Include="LivingRoom.resx">
       <DependentUpon>LivingRoom.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MasterBedroom.resx">
+      <DependentUpon>MasterBedroom.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -177,9 +231,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\haunted foyer.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\candy.jpg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\candy.png" />
@@ -223,6 +274,48 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Haunted Living Room.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Haunted House.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Attic.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\basement %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Butterfinger.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Child_s Room.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clown.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GhostGif.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Grandma2.0.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hershys.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Master Bedroom.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Resses.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\The boy.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Twix.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Candy.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

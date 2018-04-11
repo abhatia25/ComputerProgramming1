@@ -28,6 +28,10 @@ Partial Class frmInstructions
         Me.btnDone = New System.Windows.Forms.Button()
         Me.btnDoor = New System.Windows.Forms.Button()
         Me.lblCandyCounter = New System.Windows.Forms.Label()
+        Me.txtName = New System.Windows.Forms.TextBox()
+        Me.lblNamePrompt = New System.Windows.Forms.Label()
+        Me.txtNumber = New System.Windows.Forms.TextBox()
+        Me.lblNumberPrompt = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'lblTitle
@@ -73,13 +77,47 @@ Partial Class frmInstructions
         '
         'lblCandyCounter
         '
+        Me.lblCandyCounter.BackColor = System.Drawing.Color.Transparent
         Me.lblCandyCounter.Font = New System.Drawing.Font("Showcard Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCandyCounter.ForeColor = System.Drawing.Color.Yellow
         Me.lblCandyCounter.Location = New System.Drawing.Point(12, 9)
         Me.lblCandyCounter.Name = "lblCandyCounter"
         Me.lblCandyCounter.Size = New System.Drawing.Size(117, 47)
-        Me.lblCandyCounter.TabIndex = 5
+        Me.lblCandyCounter.TabIndex = 7
         Me.lblCandyCounter.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.lblCandyCounter.Visible = False
+        '
+        'txtName
+        '
+        Me.txtName.Location = New System.Drawing.Point(29, 370)
+        Me.txtName.Name = "txtName"
+        Me.txtName.Size = New System.Drawing.Size(100, 20)
+        Me.txtName.TabIndex = 8
+        '
+        'lblNamePrompt
+        '
+        Me.lblNamePrompt.AutoSize = True
+        Me.lblNamePrompt.Location = New System.Drawing.Point(61, 348)
+        Me.lblNamePrompt.Name = "lblNamePrompt"
+        Me.lblNamePrompt.Size = New System.Drawing.Size(35, 13)
+        Me.lblNamePrompt.TabIndex = 9
+        Me.lblNamePrompt.Text = "Name"
+        '
+        'txtNumber
+        '
+        Me.txtNumber.Location = New System.Drawing.Point(406, 370)
+        Me.txtNumber.Name = "txtNumber"
+        Me.txtNumber.Size = New System.Drawing.Size(100, 20)
+        Me.txtNumber.TabIndex = 10
+        '
+        'lblNumberPrompt
+        '
+        Me.lblNumberPrompt.Location = New System.Drawing.Point(389, 340)
+        Me.lblNumberPrompt.Name = "lblNumberPrompt"
+        Me.lblNumberPrompt.Size = New System.Drawing.Size(139, 27)
+        Me.lblNumberPrompt.TabIndex = 11
+        Me.lblNumberPrompt.Text = "Please enter a positive integer less than 10"
+        Me.lblNumberPrompt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'frmInstructions
         '
@@ -87,6 +125,10 @@ Partial Class frmInstructions
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(540, 458)
+        Me.Controls.Add(Me.lblNumberPrompt)
+        Me.Controls.Add(Me.txtNumber)
+        Me.Controls.Add(Me.lblNamePrompt)
+        Me.Controls.Add(Me.txtName)
         Me.Controls.Add(Me.lblCandyCounter)
         Me.Controls.Add(Me.btnDoor)
         Me.Controls.Add(Me.btnDone)
@@ -95,6 +137,7 @@ Partial Class frmInstructions
         Me.Name = "frmInstructions"
         Me.Text = "Instructions"
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
     Friend WithEvents lblTitle As System.Windows.Forms.Label
@@ -102,5 +145,9 @@ Partial Class frmInstructions
     Friend WithEvents btnDone As System.Windows.Forms.Button
     Friend WithEvents btnDoor As System.Windows.Forms.Button
     Friend WithEvents lblCandyCounter As System.Windows.Forms.Label
+    Friend WithEvents txtName As System.Windows.Forms.TextBox
+    Friend WithEvents lblNamePrompt As System.Windows.Forms.Label
+    Friend WithEvents txtNumber As System.Windows.Forms.TextBox
+    Friend WithEvents lblNumberPrompt As System.Windows.Forms.Label
 
 End Class

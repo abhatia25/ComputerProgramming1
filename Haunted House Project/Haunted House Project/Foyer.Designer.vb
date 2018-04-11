@@ -22,6 +22,7 @@ Partial Class frmFoyer
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.lblCandyCounter = New System.Windows.Forms.Label()
         Me.btnWindow = New System.Windows.Forms.Button()
         Me.btnCandles = New System.Windows.Forms.Button()
@@ -30,12 +31,16 @@ Partial Class frmFoyer
         Me.picCandy = New System.Windows.Forms.PictureBox()
         Me.btnKitchen = New System.Windows.Forms.Button()
         Me.btnHint = New System.Windows.Forms.Button()
+        Me.FoyerProgressBar = New System.Windows.Forms.ProgressBar()
+        Me.FoyerTimer = New System.Windows.Forms.Timer(Me.components)
         CType(Me.picCandy, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'lblCandyCounter
         '
+        Me.lblCandyCounter.BackColor = System.Drawing.Color.Transparent
         Me.lblCandyCounter.Font = New System.Drawing.Font("Showcard Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCandyCounter.ForeColor = System.Drawing.Color.Yellow
         Me.lblCandyCounter.Location = New System.Drawing.Point(8, 9)
         Me.lblCandyCounter.Name = "lblCandyCounter"
         Me.lblCandyCounter.Size = New System.Drawing.Size(117, 47)
@@ -80,7 +85,7 @@ Partial Class frmFoyer
         Me.btnStatue2.BackColor = System.Drawing.Color.Transparent
         Me.btnStatue2.FlatAppearance.BorderSize = 0
         Me.btnStatue2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnStatue2.Location = New System.Drawing.Point(340, 20)
+        Me.btnStatue2.Location = New System.Drawing.Point(323, 20)
         Me.btnStatue2.Name = "btnStatue2"
         Me.btnStatue2.Size = New System.Drawing.Size(45, 193)
         Me.btnStatue2.TabIndex = 10
@@ -117,6 +122,17 @@ Partial Class frmFoyer
         Me.btnHint.Text = "Hint"
         Me.btnHint.UseVisualStyleBackColor = True
         '
+        'FoyerProgressBar
+        '
+        Me.FoyerProgressBar.Location = New System.Drawing.Point(227, 12)
+        Me.FoyerProgressBar.Name = "FoyerProgressBar"
+        Me.FoyerProgressBar.Size = New System.Drawing.Size(92, 23)
+        Me.FoyerProgressBar.TabIndex = 14
+        '
+        'FoyerTimer
+        '
+        Me.FoyerTimer.Interval = 300
+        '
         'frmFoyer
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -124,6 +140,7 @@ Partial Class frmFoyer
         Me.BackgroundImage = Global.Haunted_House_Project.My.Resources.Resources.haunted_foyer
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(540, 458)
+        Me.Controls.Add(Me.FoyerProgressBar)
         Me.Controls.Add(Me.btnHint)
         Me.Controls.Add(Me.btnKitchen)
         Me.Controls.Add(Me.picCandy)
@@ -146,4 +163,6 @@ Partial Class frmFoyer
     Friend WithEvents picCandy As System.Windows.Forms.PictureBox
     Friend WithEvents btnKitchen As System.Windows.Forms.Button
     Friend WithEvents btnHint As System.Windows.Forms.Button
+    Friend WithEvents FoyerProgressBar As System.Windows.Forms.ProgressBar
+    Friend WithEvents FoyerTimer As System.Windows.Forms.Timer
 End Class

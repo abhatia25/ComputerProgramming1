@@ -22,6 +22,7 @@ Partial Class frmKitchen
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.btnHint = New System.Windows.Forms.Button()
         Me.lblCandyCounter = New System.Windows.Forms.Label()
         Me.btnCorrect = New System.Windows.Forms.Button()
@@ -32,6 +33,8 @@ Partial Class frmKitchen
         Me.btnIncorrect4 = New System.Windows.Forms.Button()
         Me.btnIncorrect5 = New System.Windows.Forms.Button()
         Me.btnIncorrect6 = New System.Windows.Forms.Button()
+        Me.KitchenProgressBar = New System.Windows.Forms.ProgressBar()
+        Me.KitchenTimer = New System.Windows.Forms.Timer(Me.components)
         CType(Me.picCandy, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -46,7 +49,9 @@ Partial Class frmKitchen
         '
         'lblCandyCounter
         '
+        Me.lblCandyCounter.BackColor = System.Drawing.Color.Transparent
         Me.lblCandyCounter.Font = New System.Drawing.Font("Showcard Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCandyCounter.ForeColor = System.Drawing.Color.Yellow
         Me.lblCandyCounter.Location = New System.Drawing.Point(10, 8)
         Me.lblCandyCounter.Name = "lblCandyCounter"
         Me.lblCandyCounter.Size = New System.Drawing.Size(117, 47)
@@ -141,6 +146,17 @@ Partial Class frmKitchen
         Me.btnIncorrect6.TabIndex = 24
         Me.btnIncorrect6.UseVisualStyleBackColor = False
         '
+        'KitchenProgressBar
+        '
+        Me.KitchenProgressBar.Location = New System.Drawing.Point(208, 8)
+        Me.KitchenProgressBar.Name = "KitchenProgressBar"
+        Me.KitchenProgressBar.Size = New System.Drawing.Size(100, 23)
+        Me.KitchenProgressBar.TabIndex = 25
+        '
+        'KitchenTimer
+        '
+        Me.KitchenTimer.Interval = 300
+        '
         'frmKitchen
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -148,6 +164,7 @@ Partial Class frmKitchen
         Me.BackgroundImage = Global.Haunted_House_Project.My.Resources.Resources.Haunted_Kitchen
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(540, 458)
+        Me.Controls.Add(Me.KitchenProgressBar)
         Me.Controls.Add(Me.btnIncorrect6)
         Me.Controls.Add(Me.btnIncorrect5)
         Me.Controls.Add(Me.btnIncorrect4)
@@ -174,4 +191,6 @@ Partial Class frmKitchen
     Friend WithEvents btnIncorrect4 As System.Windows.Forms.Button
     Friend WithEvents btnIncorrect5 As System.Windows.Forms.Button
     Friend WithEvents btnIncorrect6 As System.Windows.Forms.Button
+    Friend WithEvents KitchenProgressBar As System.Windows.Forms.ProgressBar
+    Friend WithEvents KitchenTimer As System.Windows.Forms.Timer
 End Class

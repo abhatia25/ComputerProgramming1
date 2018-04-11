@@ -145,4 +145,46 @@
   <data name="M_M_s" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\M&amp;M's.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Haunted_House" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Haunted House.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Attic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Attic.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="basement__2_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\basement (2).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Butterfinger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Butterfinger.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CandyCorn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Candy.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Child_s_Room" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Child_s Room.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="clown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\clown.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GhostGif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GhostGif.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Grandma2_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Grandma2.0.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Hershys" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Hershys.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Master_Bedroom" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Master Bedroom.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Resses" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Resses.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="The_boy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\The boy.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Twix" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Twix.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>
