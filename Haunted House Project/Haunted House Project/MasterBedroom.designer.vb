@@ -50,7 +50,7 @@ Partial Class frmMasterBedroom
         '
         Me.lblCandyCounter.BackColor = System.Drawing.Color.Transparent
         Me.lblCandyCounter.Font = New System.Drawing.Font("Showcard Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblCandyCounter.ForeColor = System.Drawing.Color.DarkRed
+        Me.lblCandyCounter.ForeColor = System.Drawing.Color.Yellow
         Me.lblCandyCounter.Location = New System.Drawing.Point(1, 0)
         Me.lblCandyCounter.Name = "lblCandyCounter"
         Me.lblCandyCounter.Size = New System.Drawing.Size(112, 48)
@@ -247,12 +247,13 @@ Partial Class frmMasterBedroom
         '
         'Timer1
         '
+        Me.Timer1.Interval = 300
         '
         'btnNext
         '
         Me.btnNext.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnNext.Font = New System.Drawing.Font("Ravie", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnNext.ForeColor = System.Drawing.Color.MidnightBlue
+        Me.btnNext.ForeColor = System.Drawing.Color.DarkRed
         Me.btnNext.Location = New System.Drawing.Point(747, 12)
         Me.btnNext.Name = "btnNext"
         Me.btnNext.Size = New System.Drawing.Size(75, 23)

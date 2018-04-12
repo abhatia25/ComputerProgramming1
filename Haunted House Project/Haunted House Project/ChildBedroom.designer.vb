@@ -38,7 +38,6 @@ Partial Class frmChildBedroom
         Me.lblCandyCounter = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.ProgressBar1 = New System.Windows.Forms.ProgressBar()
-        Me.lblProgress = New System.Windows.Forms.Label()
         Me.btnNext = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -204,7 +203,7 @@ Partial Class frmChildBedroom
         '
         Me.lblCandyCounter.BackColor = System.Drawing.Color.Transparent
         Me.lblCandyCounter.Font = New System.Drawing.Font("Showcard Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblCandyCounter.ForeColor = System.Drawing.Color.DarkRed
+        Me.lblCandyCounter.ForeColor = System.Drawing.Color.Yellow
         Me.lblCandyCounter.Location = New System.Drawing.Point(1, -1)
         Me.lblCandyCounter.Name = "lblCandyCounter"
         Me.lblCandyCounter.Size = New System.Drawing.Size(111, 53)
@@ -213,6 +212,7 @@ Partial Class frmChildBedroom
         '
         'Timer1
         '
+        Me.Timer1.Interval = 300
         '
         'ProgressBar1
         '
@@ -220,17 +220,6 @@ Partial Class frmChildBedroom
         Me.ProgressBar1.Name = "ProgressBar1"
         Me.ProgressBar1.Size = New System.Drawing.Size(166, 27)
         Me.ProgressBar1.TabIndex = 15
-        '
-        'lblProgress
-        '
-        Me.lblProgress.BackColor = System.Drawing.Color.Transparent
-        Me.lblProgress.Font = New System.Drawing.Font("Stencil", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblProgress.Location = New System.Drawing.Point(238, 29)
-        Me.lblProgress.Name = "lblProgress"
-        Me.lblProgress.Size = New System.Drawing.Size(46, 23)
-        Me.lblProgress.TabIndex = 16
-        Me.lblProgress.Text = "0%"
-        Me.lblProgress.TextAlign = System.Drawing.ContentAlignment.TopRight
         '
         'btnNext
         '
@@ -264,7 +253,6 @@ Partial Class frmChildBedroom
         Me.ClientSize = New System.Drawing.Size(756, 471)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.btnNext)
-        Me.Controls.Add(Me.lblProgress)
         Me.Controls.Add(Me.ProgressBar1)
         Me.Controls.Add(Me.lblCandyCounter)
         Me.Controls.Add(Me.btnButton12)
@@ -300,7 +288,6 @@ Partial Class frmChildBedroom
     Friend WithEvents lblCandyCounter As System.Windows.Forms.Label
     Friend WithEvents Timer1 As System.Windows.Forms.Timer
     Friend WithEvents ProgressBar1 As System.Windows.Forms.ProgressBar
-    Friend WithEvents lblProgress As System.Windows.Forms.Label
     Friend WithEvents btnNext As System.Windows.Forms.Button
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
 End Class

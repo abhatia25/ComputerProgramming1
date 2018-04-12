@@ -22,6 +22,7 @@ Partial Class frmLivingRoom
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.btnIncorrect1 = New System.Windows.Forms.Button()
         Me.btnHint = New System.Windows.Forms.Button()
         Me.btnIncorrect2 = New System.Windows.Forms.Button()
@@ -30,6 +31,8 @@ Partial Class frmLivingRoom
         Me.picCandy = New System.Windows.Forms.PictureBox()
         Me.btnIncorrect4 = New System.Windows.Forms.Button()
         Me.lblCandyCounter = New System.Windows.Forms.Label()
+        Me.ProgressBar1 = New System.Windows.Forms.ProgressBar()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         CType(Me.picCandy, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -119,6 +122,17 @@ Partial Class frmLivingRoom
         Me.lblCandyCounter.TabIndex = 34
         Me.lblCandyCounter.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'ProgressBar1
+        '
+        Me.ProgressBar1.Location = New System.Drawing.Point(183, 12)
+        Me.ProgressBar1.Name = "ProgressBar1"
+        Me.ProgressBar1.Size = New System.Drawing.Size(100, 23)
+        Me.ProgressBar1.TabIndex = 35
+        '
+        'Timer1
+        '
+        Me.Timer1.Interval = 300
+        '
         'frmLivingRoom
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -126,6 +140,7 @@ Partial Class frmLivingRoom
         Me.BackgroundImage = Global.Haunted_House_Project.My.Resources.Resources.Haunted_Living_Room
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(540, 458)
+        Me.Controls.Add(Me.ProgressBar1)
         Me.Controls.Add(Me.lblCandyCounter)
         Me.Controls.Add(Me.btnIncorrect4)
         Me.Controls.Add(Me.picCandy)
@@ -148,4 +163,6 @@ Partial Class frmLivingRoom
     Friend WithEvents picCandy As System.Windows.Forms.PictureBox
     Friend WithEvents btnIncorrect4 As System.Windows.Forms.Button
     Friend WithEvents lblCandyCounter As System.Windows.Forms.Label
+    Friend WithEvents ProgressBar1 As System.Windows.Forms.ProgressBar
+    Friend WithEvents Timer1 As System.Windows.Forms.Timer
 End Class

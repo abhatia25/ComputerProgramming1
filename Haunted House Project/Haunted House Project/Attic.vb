@@ -1,9 +1,9 @@
 ﻿Public Class frmAttic
-    Dim shakeCount As Integer = 0
     Dim message As String
+    Dim tries As Integer = 0
 
     Private Sub frmAttic_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        lblCandyCounter.Text = "Candy Counter:" & vbCrLf & "6"
+        lblCandyCounter.Text = "Candy Counter:" & vbCrLf & GlobalVariables.CandyCounter
         MessageBox.Show("You have now entered the Attic, find the candy by clicking diffrent objects. YOU HAVE A TIME LIMIT, GO")
         Timer1.Start()
     End Sub
@@ -27,42 +27,35 @@
             PictureBox1.Visible = True
             MessageBox.Show("You did not find the candy in time, The Boy found you. GAME OVER")
             Me.Visible = False
-            frmGameOver.Visible = True
+            'frmGameOver.Visible = True
         End If
         lblProgress.Text = ProgressBar1.Value & ("%")
     End Sub
 
     Private Sub btnNext_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnNext.Click
         MessageBox.Show("The Basement is locked you must answer a riddle to get the key")
-        message = InputBox("Who Am I?: This body has no ears or tongue So he's not able to use phones Tickling doesn't work on him Because he's only made of bones", )
-
-        If message = "skeleton" Then
-            MessageBox.Show("CORRECT")
-
-            frmBasement.Show()
-            Me.Hide()
-        Else
-            MessageBox.Show("WRONG, last try or you die")
-
-            message = InputBox("Who Am I?: This body has no ears or tongue So he's not able to use phones Tickling doesn't work on him Because he's only made of bones", )
-        End If
-
-        If message = "Skeleton" Then
-            MessageBox.Show("CORRECT")
-            frmBasement.Show()
-            Me.Hide()
-        Else
-            PictureBox1.Visible = True
-            Me.Visible = False
-            frmGameOver.Visible = True
-
-        End If
+        message = InputBox("Who Am I?: This body has no ears or tongue So he's not able to use phones Tickling doesn't work on him Because he's only made of bones")
+        Select Case message
+            Case "skeleton"
+                MessageBox.Show("CORRECT")
+                frmBasement.Show()
+                Me.Hide()
+            Case Else
+                If tries = 0 Then
+                    MessageBox.Show("WRONG, last try or you die")
+                    tries += 1
+                    message = InputBox("Who Am I?: This body has no ears or tongue So he's not able to use phones Tickling doesn't work on him Because he's only made of bones")
+                ElseIf tries = 1 Then
+                    PictureBox1.Visible = True
+                    Me.Close()
+                    frmGameOver.Visible = True
+                End If
+        End Select
     End Sub
 
     Private Sub Incorrect_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click, Button2.Click, Button4.Click, Button5.Click, Button6.Click, Button7.Click, Button8.Click, Button9.Click, Button10.Click, Button11.Click, Button12.Click, Button13.Click, Button14.Click, Button15.Click, Button16.Click, Button17.Click, Button18.Click, Button19.Click
         shakeMe()
         MessageBox.Show("Its Not There")
-        End
     End Sub
 
     Private Sub shakeMe()

@@ -16,10 +16,12 @@ Public Class frmKitchen
     End Sub
 
     Private Sub Correct_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCorrect.Click 'When btnCorrect is clicked
-        picCandy.Visible = True 'Show picCandy
-        MessageBox.Show("You found the candy!") 'Show "You found the candy" in a message box
         GlobalVariables.CandyCounter += 1 'Increment candyCounter by 1
         lblCandyCounter.Text = "Candy Counter" & vbCrLf & GlobalVariables.CandyCounter 'Display value of candyCounter in lblCandyCounter
+        KitchenTimer.Stop()
+        KitchenProgressBar.Value = 0
+        picCandy.Visible = True 'Show picCandy
+        MessageBox.Show("You found the candy!") 'Show "You found the candy" in a message box
         My.Computer.Audio.Play(My.Resources.Applause, AudioPlayMode.WaitToComplete) 'Play applause audio
         Me.Visible = False 'Hide this form
         frmLivingRoom.Visible = True 'Show living room form
@@ -68,9 +70,10 @@ Public Class frmKitchen
     Private Sub KitchenTimer_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles KitchenTimer.Tick 'When KitchenTimer ticks
         KitchenProgressBar.Increment(1) 'Progress bar increment by 1
         If KitchenProgressBar.Value = 100 Then 'When progress bar gets full
+            KitchenTimer.Stop()
+            KitchenProgressBar.Value = 0
             Me.Visible = False 'Hide this form
-            frmGameOver.Visible = True 'Open Game Over form
-            KitchenProgressBar.Value = 0 'Reset progress bar
+            'frmGameOver.Visible = True 'Open Game Over form
         End If
     End Sub
 End Class

@@ -34,11 +34,10 @@ Public Class frmInstructions 'NEED TO COMMENT
 
     Private Sub btnDoor_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnDoor.Click
         Me.Visible = False
-        frmFoyer.Visible = True
         GlobalVariables.CandyCounter += 1
         MessageBox.Show("You have entered the haunted house and found your first candy")
-        MessageBox.Show("Click on objects to find the candy")
         Me.lblCandyCounter.Text = "Candy Counter" & vbCrLf & GlobalVariables.CandyCounter
+        frmFoyer.Visible = True
     End Sub
 End Class
 

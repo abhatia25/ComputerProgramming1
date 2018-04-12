@@ -10,11 +10,13 @@ Public Class frmFoyer
     End Sub
 
     Private Sub btnStatue_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnStatue.Click
+        GlobalVariables.CandyCounter += 1 'Increment Candy Counter by 1
+        FoyerTimer8.Stop()
+        FoyerProgressBar.Value = 0
+        lblCandyCounter.Text = "Candy Counter:" & vbCrLf & GlobalVariables.CandyCounter
         picCandy.Visible = True
         MessageBox.Show("You found the candy!")
-        GlobalVariables.CandyCounter += 1 'Increment Candy Counter by 1
         My.Computer.Audio.Play(My.Resources.Applause, AudioPlayMode.WaitToComplete) 'Play applause audio
-        lblCandyCounter.Text = "Candy Counter" & vbCrLf & GlobalVariables.CandyCounter 'Display new Candy Counter in label
         Me.Visible = False
         frmKitchen.Visible = True 'Move to kitchen
         MessageBox.Show("Welcome to the kitchen")
@@ -22,6 +24,7 @@ Public Class frmFoyer
 
     Private Sub frmFoyer_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         lblCandyCounter.Text = "Candy Counter" & vbCrLf & GlobalVariables.CandyCounter ' Display Candy Counter in label
+        MessageBox.Show("Click on objects to find the candy")
     End Sub
 
     Private Sub btnHint_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnHint.Click
@@ -35,16 +38,18 @@ Public Class frmFoyer
         End If
     End Sub
 
-    Private Sub FoyerTimer_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles FoyerTimer.Tick
+    Private Sub FoyerTimer_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles FoyerTimer8.Tick
         FoyerProgressBar.Increment(1) 'When timer ticks, progress bar increments by 1
         If FoyerProgressBar.Value = 100 Then 'When progress bar gets full
+            FoyerTimer8.Stop()
+            FoyerProgressBar.Value = 0
             Me.Visible = False 'Hide this form
-            frmGameOver.Visible = True 'Open Game Over form
+            'frmGameOver.Visible = True 'Open Game Over form
         End If
     End Sub
 
     Private Sub Start_Timer(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCandles.Click, btnHint.Click, btnKitchen.Click, btnStatue.Click, btnStatue2.Click, btnWindow.Click
-        FoyerTimer.Start() 'Start timer once user clicks on any button
+        FoyerTimer8.Start() 'Start timer once user clicks on any button
     End Sub
 
     Private Sub shakeMe()

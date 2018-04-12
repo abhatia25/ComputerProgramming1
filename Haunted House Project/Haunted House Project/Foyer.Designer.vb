@@ -32,7 +32,7 @@ Partial Class frmFoyer
         Me.btnKitchen = New System.Windows.Forms.Button()
         Me.btnHint = New System.Windows.Forms.Button()
         Me.FoyerProgressBar = New System.Windows.Forms.ProgressBar()
-        Me.FoyerTimer = New System.Windows.Forms.Timer(Me.components)
+        Me.FoyerTimer8 = New System.Windows.Forms.Timer(Me.components)
         CType(Me.picCandy, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -129,9 +129,9 @@ Partial Class frmFoyer
         Me.FoyerProgressBar.Size = New System.Drawing.Size(92, 23)
         Me.FoyerProgressBar.TabIndex = 14
         '
-        'FoyerTimer
+        'FoyerTimer8
         '
-        Me.FoyerTimer.Interval = 300
+        Me.FoyerTimer8.Interval = 300
         '
         'frmFoyer
         '
@@ -164,5 +164,5 @@ Partial Class frmFoyer
     Friend WithEvents btnKitchen As System.Windows.Forms.Button
     Friend WithEvents btnHint As System.Windows.Forms.Button
     Friend WithEvents FoyerProgressBar As System.Windows.Forms.ProgressBar
-    Friend WithEvents FoyerTimer As System.Windows.Forms.Timer
+    Friend WithEvents FoyerTimer8 As System.Windows.Forms.Timer
 End Class
