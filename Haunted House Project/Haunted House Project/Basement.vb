@@ -30,7 +30,7 @@
             ProgressBar1.Value = 0
             MessageBox.Show("You did not find the candy in time, the clown found you. GAME OVER")
             Me.Visible = False
-            'frmGameOver.Visible = True
+            frmGameOver.Visible = True
         End If
     End Sub
 

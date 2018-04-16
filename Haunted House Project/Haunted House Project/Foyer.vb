@@ -44,7 +44,7 @@ Public Class frmFoyer
             FoyerTimer8.Stop()
             FoyerProgressBar.Value = 0
             Me.Visible = False 'Hide this form
-            'frmGameOver.Visible = True 'Open Game Over form
+            frmGameOver.Visible = True 'Open Game Over form
         End If
     End Sub
 

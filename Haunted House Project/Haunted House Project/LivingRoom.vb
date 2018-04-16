@@ -68,7 +68,7 @@ Public Class frmLivingRoom
             Timer1.Stop()
             ProgressBar1.Value = 0
             Me.Visible = False 'Hide this form
-            'frmGameOver.Visible = True 'Open Game Over form
+            frmGameOver.Visible = True 'Open Game Over form
         End If
     End Sub
 

@@ -27,7 +27,7 @@
             PictureBox1.Visible = True
             MessageBox.Show("You did not find the candy in time, The Boy found you. GAME OVER")
             Me.Visible = False
-            'frmGameOver.Visible = True
+            frmGameOver.Visible = True
         End If
         lblProgress.Text = ProgressBar1.Value & ("%")
     End Sub

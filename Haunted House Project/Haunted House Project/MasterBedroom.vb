@@ -31,7 +31,7 @@
             PictureBox1.Visible = True
             MessageBox.Show("You did not find the candy in time, dead Grandma found you. GAME OVER")
             Me.Visible = False
-            'frmGameOver.Visible = True
+            frmGameOver.Visible = True
         End If
     End Sub
 
