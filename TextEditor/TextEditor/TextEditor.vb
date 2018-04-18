@@ -65,4 +65,10 @@ Public Class frmTextEditor
             End If
         End If
     End Sub
+
+    Private Sub AboutToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AboutToolStripMenuItem.Click
+        Dim aboutDB As New AboutDialogBox()
+        'Show dialog box
+        aboutDB.ShowDialog()
+    End Sub
 End Class

@@ -72,11 +72,53 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ListBoxTuitionCalculator.vb">
+    <Compile Include="AlarmSystem.Designer.vb">
+      <DependentUpon>AlarmSystem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AlarmSystem.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ListBoxTuitionCalculator.Designer.vb">
-      <DependentUpon>ListBoxTuitionCalculator.vb</DependentUpon>
+    <Compile Include="CandyJar.Designer.vb">
+      <DependentUpon>CandyJar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CandyJar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CardGame.Designer.vb">
+      <DependentUpon>CardGame.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CardGame.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CostCalculator.Designer.vb">
+      <DependentUpon>CostCalculator.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CostCalculator.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DiceGame.Designer.vb">
+      <DependentUpon>DiceGame.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DiceGame.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoanAnalyzer.Designer.vb">
+      <DependentUpon>LoanAnalyzer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoanAnalyzer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mastermind.Designer.vb">
+      <DependentUpon>Mastermind.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mastermind.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TuitionCalculator.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TuitionCalculator.Designer.vb">
+      <DependentUpon>TuitionCalculator.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -96,8 +138,29 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="ListBoxTuitionCalculator.resx">
-      <DependentUpon>ListBoxTuitionCalculator.vb</DependentUpon>
+    <EmbeddedResource Include="AlarmSystem.resx">
+      <DependentUpon>AlarmSystem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CandyJar.resx">
+      <DependentUpon>CandyJar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CardGame.resx">
+      <DependentUpon>CardGame.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CostCalculator.resx">
+      <DependentUpon>CostCalculator.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DiceGame.resx">
+      <DependentUpon>DiceGame.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoanAnalyzer.resx">
+      <DependentUpon>LoanAnalyzer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mastermind.resx">
+      <DependentUpon>Mastermind.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TuitionCalculator.resx">
+      <DependentUpon>TuitionCalculator.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -116,6 +179,60 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\car.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\house.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ace of Spades.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2 of Spades.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3 of Spades.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4_of_spades.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5_of_spades.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10_of_spades.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Atlas_deck_9_of_spades.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6_of_spades.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7_of_spades.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8_of_spades.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dice_1-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dice_2-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dice_3-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dice_4-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dice_5-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dice_6-512.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
