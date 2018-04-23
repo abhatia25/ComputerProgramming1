@@ -8,7 +8,7 @@ Public Class frmSignature
 
     Private Sub NextToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NextToolStripMenuItem.Click
         Me.Hide()
-        'frmLoanCalculator.Show()
+        frmLoanCalculator.Show()
     End Sub
 
     Function Signature(ByVal strName As String) As String

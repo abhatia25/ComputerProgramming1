@@ -72,6 +72,12 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LoanCalculator.Designer.vb">
+      <DependentUpon>LoanCalculator.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoanCalculator.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Multiples.Designer.vb">
       <DependentUpon>Multiples.vb</DependentUpon>
     </Compile>
@@ -120,6 +126,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="LoanCalculator.resx">
+      <DependentUpon>LoanCalculator.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Multiples.resx">
       <DependentUpon>Multiples.vb</DependentUpon>
     </EmbeddedResource>
