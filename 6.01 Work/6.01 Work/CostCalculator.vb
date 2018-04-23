@@ -28,4 +28,9 @@ Public Class frmCostCalculator
             lblResult.Text = "Please enter numeric values"
         End If
     End Sub
+
+    Private Sub NextToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles NextToolStripMenuItem.Click
+        Me.Hide()
+        frmCelsiusConversion.Show()
+    End Sub
 End Class

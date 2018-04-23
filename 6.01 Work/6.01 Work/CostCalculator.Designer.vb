@@ -30,12 +30,13 @@ Partial Class frmCostCalculator
         Me.txtNumberofItems = New System.Windows.Forms.TextBox()
         Me.btnCalculate = New System.Windows.Forms.Button()
         Me.lblResult = New System.Windows.Forms.Label()
+        Me.NextToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'MenuStrip1
         '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ExitToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ExitToolStripMenuItem, Me.NextToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(284, 24)
@@ -97,6 +98,12 @@ Partial Class frmCostCalculator
         Me.lblResult.TabIndex = 6
         Me.lblResult.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'NextToolStripMenuItem
+        '
+        Me.NextToolStripMenuItem.Name = "NextToolStripMenuItem"
+        Me.NextToolStripMenuItem.Size = New System.Drawing.Size(43, 20)
+        Me.NextToolStripMenuItem.Text = "&Next"
+        '
         'frmCostCalculator
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -126,4 +133,5 @@ Partial Class frmCostCalculator
     Friend WithEvents txtNumberofItems As System.Windows.Forms.TextBox
     Friend WithEvents btnCalculate As System.Windows.Forms.Button
     Friend WithEvents lblResult As System.Windows.Forms.Label
+    Friend WithEvents NextToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 End Class

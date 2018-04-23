@@ -6,11 +6,11 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{CAB8474F-C8E3-4062-853A-E93FAEB123DD}</ProjectGuid>
+    <ProjectGuid>{1D66BBF7-B0CE-4193-93BA-5FF7849698D3}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>_6._01_Work.My.MyApplication</StartupObject>
-    <RootNamespace>_6._01_Work</RootNamespace>
-    <AssemblyName>6.01 Work</AssemblyName>
+    <StartupObject>_7._01_Sub_Procedures.My.MyApplication</StartupObject>
+    <RootNamespace>_7._01_Sub_Procedures</RootNamespace>
+    <AssemblyName>7.01 Sub Procedures</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
@@ -23,7 +23,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>6.01 Work.xml</DocumentationFile>
+    <DocumentationFile>7.01 Sub Procedures.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
@@ -33,7 +33,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>6.01 Work.xml</DocumentationFile>
+    <DocumentationFile>7.01 Sub Procedures.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
@@ -72,59 +72,29 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AlarmSystem.Designer.vb">
-      <DependentUpon>AlarmSystem.vb</DependentUpon>
+    <Compile Include="Multiples.Designer.vb">
+      <DependentUpon>Multiples.vb</DependentUpon>
     </Compile>
-    <Compile Include="AlarmSystem.vb">
+    <Compile Include="Multiples.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CandyJar.Designer.vb">
-      <DependentUpon>CandyJar.vb</DependentUpon>
+    <Compile Include="PoemChoiceDialogBox.Designer.vb">
+      <DependentUpon>PoemChoiceDialogBox.vb</DependentUpon>
     </Compile>
-    <Compile Include="CandyJar.vb">
+    <Compile Include="PoemChoiceDialogBox.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CardGame.Designer.vb">
-      <DependentUpon>CardGame.vb</DependentUpon>
+    <Compile Include="TimesTen.Designer.vb">
+      <DependentUpon>TimesTen.vb</DependentUpon>
     </Compile>
-    <Compile Include="CardGame.vb">
+    <Compile Include="TimesTen.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CelsiusConversion.Designer.vb">
-      <DependentUpon>CelsiusConversion.vb</DependentUpon>
-    </Compile>
-    <Compile Include="CelsiusConversion.vb">
+    <Compile Include="TwinkleTwinkle.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CostCalculator.Designer.vb">
-      <DependentUpon>CostCalculator.vb</DependentUpon>
-    </Compile>
-    <Compile Include="CostCalculator.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DiceGame.Designer.vb">
-      <DependentUpon>DiceGame.vb</DependentUpon>
-    </Compile>
-    <Compile Include="DiceGame.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="LoanAnalyzer.Designer.vb">
-      <DependentUpon>LoanAnalyzer.vb</DependentUpon>
-    </Compile>
-    <Compile Include="LoanAnalyzer.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Mastermind.Designer.vb">
-      <DependentUpon>Mastermind.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Mastermind.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="TuitionCalculator.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="TuitionCalculator.Designer.vb">
-      <DependentUpon>TuitionCalculator.vb</DependentUpon>
+    <Compile Include="TwinkleTwinkle.Designer.vb">
+      <DependentUpon>TwinkleTwinkle.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -144,32 +114,17 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="AlarmSystem.resx">
-      <DependentUpon>AlarmSystem.vb</DependentUpon>
+    <EmbeddedResource Include="Multiples.resx">
+      <DependentUpon>Multiples.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CandyJar.resx">
-      <DependentUpon>CandyJar.vb</DependentUpon>
+    <EmbeddedResource Include="PoemChoiceDialogBox.resx">
+      <DependentUpon>PoemChoiceDialogBox.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CardGame.resx">
-      <DependentUpon>CardGame.vb</DependentUpon>
+    <EmbeddedResource Include="TimesTen.resx">
+      <DependentUpon>TimesTen.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CelsiusConversion.resx">
-      <DependentUpon>CelsiusConversion.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CostCalculator.resx">
-      <DependentUpon>CostCalculator.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="DiceGame.resx">
-      <DependentUpon>DiceGame.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="LoanAnalyzer.resx">
-      <DependentUpon>LoanAnalyzer.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Mastermind.resx">
-      <DependentUpon>Mastermind.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="TuitionCalculator.resx">
-      <DependentUpon>TuitionCalculator.vb</DependentUpon>
+    <EmbeddedResource Include="TwinkleTwinkle.resx">
+      <DependentUpon>TwinkleTwinkle.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -188,60 +143,6 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\car.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\house.jpeg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Ace of Spades.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\2 of Spades.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\3 of Spades.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\4_of_spades.svg.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\5_of_spades.svg.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\10_of_spades.svg.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Atlas_deck_9_of_spades.svg.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\6_of_spades.svg.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\7_of_spades.svg.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\8_of_spades.svg.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\dice_1-512.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\dice_2-512.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\dice_3-512.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\dice_4-512.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\dice_5-512.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\dice_6-512.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
