@@ -72,6 +72,12 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DiceRolls.Designer.vb">
+      <DependentUpon>DiceRolls.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DiceRolls.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="LoanCalculator.Designer.vb">
       <DependentUpon>LoanCalculator.vb</DependentUpon>
     </Compile>
@@ -126,6 +132,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="DiceRolls.resx">
+      <DependentUpon>DiceRolls.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LoanCalculator.resx">
       <DependentUpon>LoanCalculator.vb</DependentUpon>
     </EmbeddedResource>

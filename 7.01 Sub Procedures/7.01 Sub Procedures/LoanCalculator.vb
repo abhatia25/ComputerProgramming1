@@ -114,6 +114,6 @@ Public Class frmLoanCalculator
 
     Private Sub NextToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NextToolStripMenuItem.Click
         Me.Hide()
-
+        frmDiceRolls.Show()
     End Sub
 End Class
