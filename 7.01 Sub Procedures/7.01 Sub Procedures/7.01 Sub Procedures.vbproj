@@ -72,6 +72,18 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Candy.Designer.vb">
+      <DependentUpon>Candy.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Candy.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CandyJar.designer.vb">
+      <DependentUpon>CandyJar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CandyJar.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="DiceRolls.Designer.vb">
       <DependentUpon>DiceRolls.vb</DependentUpon>
     </Compile>
@@ -94,6 +106,12 @@
       <DependentUpon>PoemChoiceDialogBox.vb</DependentUpon>
     </Compile>
     <Compile Include="PoemChoiceDialogBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reasons.Designer.vb">
+      <DependentUpon>Reasons.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reasons.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Signature.Designer.vb">
@@ -132,6 +150,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Candy.resx">
+      <DependentUpon>Candy.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CandyJar.resx">
+      <DependentUpon>CandyJar.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DiceRolls.resx">
       <DependentUpon>DiceRolls.vb</DependentUpon>
     </EmbeddedResource>
@@ -143,6 +167,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PoemChoiceDialogBox.resx">
       <DependentUpon>PoemChoiceDialogBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reasons.resx">
+      <DependentUpon>Reasons.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Signature.resx">
       <DependentUpon>Signature.vb</DependentUpon>

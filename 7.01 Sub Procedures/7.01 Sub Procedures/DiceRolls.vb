@@ -46,10 +46,11 @@ Public Class frmDiceRolls
     End Sub
 
     Private Sub NextToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles NextToolStripMenuItem.Click
-
+        Me.Hide()
+        frmReasons.Show()
     End Sub
 
     Private Sub ExitToolStripMenuItem_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles ExitToolStripMenuItem.Click
-
+        End
     End Sub
 End Class
