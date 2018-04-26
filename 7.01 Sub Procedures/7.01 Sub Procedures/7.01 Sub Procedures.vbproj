@@ -114,6 +114,12 @@
     <Compile Include="Reasons.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="ShakespeareInsults.Designer.vb">
+      <DependentUpon>ShakespeareInsults.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ShakespeareInsults.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Signature.Designer.vb">
       <DependentUpon>Signature.vb</DependentUpon>
     </Compile>
@@ -170,6 +176,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Reasons.resx">
       <DependentUpon>Reasons.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShakespeareInsults.resx">
+      <DependentUpon>ShakespeareInsults.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Signature.resx">
       <DependentUpon>Signature.vb</DependentUpon>

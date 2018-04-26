@@ -9,6 +9,6 @@ Public Class frmCandy
 
     Private Sub NextToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles NextToolStripMenuItem.Click
         Me.Hide()
-
+        frmShakespeare.Show()
     End Sub
 End Class
