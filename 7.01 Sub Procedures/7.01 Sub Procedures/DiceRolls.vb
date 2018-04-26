@@ -14,13 +14,10 @@ Public Class frmDiceRolls
     End Sub
     'Simulates numRolls rolls of three dice and keeps a count of the
     'outcomes.
-    '
     'pre: counts has elements with at least index values 2 through 18.
     'post: numRolls dice rolls have been simulated. Counts of numRolls
     'simulated dice rolls has been stored in counts.
-    '
-    Sub CountTrials(ByVal numRolls As Integer, _
-    ByRef counts() As Integer)
+    Sub CountTrials(ByVal numRolls As Integer, ByRef counts() As Integer)
         Dim rollOutcome As Integer
         Randomize()
         For roll As Integer = 1 To numRolls
@@ -34,14 +31,12 @@ Public Class frmDiceRolls
     'pre: counts has elements with at least index values 2 through 18.
     'post: Elements of counts() have been displayed in a list box.
     '
-    Sub DisplayRollsCounts(ByRef counts() As Integer, _
-    ByRef lstList As ListBox)
+    Sub DisplayRollsCounts(ByRef counts() As Integer, ByRef lstList As ListBox)
         For rollOutcome As Integer = 2 To 18
             lstList.Items.Add(rollOutcome & vbTab & counts(rollOutcome))
         Next rollOutcome
     End Sub
-    Private Sub txtRolls_TextChanged(ByVal sender As Object, _
-    ByVal e As System.EventArgs) Handles txtRolls.TextChanged
+    Private Sub txtRolls_TextChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles txtRolls.TextChanged
         Me.lstRollsOutcomes.Items.Clear()
     End Sub
 
