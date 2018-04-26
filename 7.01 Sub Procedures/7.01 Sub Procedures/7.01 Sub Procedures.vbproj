@@ -90,6 +90,12 @@
     <Compile Include="DiceRolls.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FootballGame.Designer.vb">
+      <DependentUpon>FootballGame.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FootballGame.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="LoanCalculator.Designer.vb">
       <DependentUpon>LoanCalculator.vb</DependentUpon>
     </Compile>
@@ -114,6 +120,12 @@
     <Compile Include="Reasons.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Savings.Designer.vb">
+      <DependentUpon>Savings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Savings.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ShakespeareInsults.Designer.vb">
       <DependentUpon>ShakespeareInsults.vb</DependentUpon>
     </Compile>
@@ -124,6 +136,12 @@
       <DependentUpon>Signature.vb</DependentUpon>
     </Compile>
     <Compile Include="Signature.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SortNums.Designer.vb">
+      <DependentUpon>SortNums.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SortNums.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="TimesTen.Designer.vb">
@@ -165,6 +183,9 @@
     <EmbeddedResource Include="DiceRolls.resx">
       <DependentUpon>DiceRolls.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FootballGame.resx">
+      <DependentUpon>FootballGame.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LoanCalculator.resx">
       <DependentUpon>LoanCalculator.vb</DependentUpon>
     </EmbeddedResource>
@@ -177,11 +198,17 @@
     <EmbeddedResource Include="Reasons.resx">
       <DependentUpon>Reasons.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Savings.resx">
+      <DependentUpon>Savings.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ShakespeareInsults.resx">
       <DependentUpon>ShakespeareInsults.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Signature.resx">
       <DependentUpon>Signature.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SortNums.resx">
+      <DependentUpon>SortNums.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TimesTen.resx">
       <DependentUpon>TimesTen.vb</DependentUpon>

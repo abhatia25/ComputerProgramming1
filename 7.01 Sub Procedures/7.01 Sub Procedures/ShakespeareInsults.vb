@@ -10,7 +10,7 @@ Public Class frmShakespeare
 
     Private Sub NextToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NextToolStripMenuItem.Click
         Me.Hide()
-
+        frmSortNums.Show()
     End Sub
 
     Private Sub showInsult()
