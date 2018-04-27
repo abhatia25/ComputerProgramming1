@@ -72,6 +72,12 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BacteriaGrowth.Designer.vb">
+      <DependentUpon>BacteriaGrowth.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BacteriaGrowth.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Candy.Designer.vb">
       <DependentUpon>Candy.vb</DependentUpon>
     </Compile>
@@ -174,6 +180,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="BacteriaGrowth.resx">
+      <DependentUpon>BacteriaGrowth.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Candy.resx">
       <DependentUpon>Candy.vb</DependentUpon>
     </EmbeddedResource>

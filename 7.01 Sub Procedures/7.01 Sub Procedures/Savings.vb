@@ -8,6 +8,7 @@ Public Class frmSavings
 
     Private Sub NextToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NextToolStripMenuItem.Click
         Me.Hide()
+        frmBacteriaGrowth.Show()
     End Sub
 
     Private Sub calcDeposit(ByRef dblTotalSavings As Double, ByVal dblSavingsAmount As Double, ByVal intSavingsTime As Integer)
