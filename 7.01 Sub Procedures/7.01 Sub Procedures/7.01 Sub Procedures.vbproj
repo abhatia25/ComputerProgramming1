@@ -114,6 +114,18 @@
     <Compile Include="FootballGame.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Friends.Designer.vb">
+      <DependentUpon>Friends.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Friends.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HotDog.Designer.vb">
+      <DependentUpon>HotDog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HotDog.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="LoanCalculator.Designer.vb">
       <DependentUpon>LoanCalculator.vb</DependentUpon>
     </Compile>
@@ -168,6 +180,12 @@
     <Compile Include="SortNums.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Stones.Designer.vb">
+      <DependentUpon>Stones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Stones.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="TimesTen.Designer.vb">
       <DependentUpon>TimesTen.vb</DependentUpon>
     </Compile>
@@ -219,6 +237,12 @@
     <EmbeddedResource Include="FootballGame.resx">
       <DependentUpon>FootballGame.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Friends.resx">
+      <DependentUpon>Friends.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HotDog.resx">
+      <DependentUpon>HotDog.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LoanCalculator.resx">
       <DependentUpon>LoanCalculator.vb</DependentUpon>
     </EmbeddedResource>
@@ -246,6 +270,9 @@
     <EmbeddedResource Include="SortNums.resx">
       <DependentUpon>SortNums.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Stones.resx">
+      <DependentUpon>Stones.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TimesTen.resx">
       <DependentUpon>TimesTen.vb</DependentUpon>
     </EmbeddedResource>
@@ -272,6 +299,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\shopping_cart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cris.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\luiz.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shana.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
