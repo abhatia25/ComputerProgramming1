@@ -132,6 +132,12 @@
     <Compile Include="LoanCalculator.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="LoanPayment.Designer.vb">
+      <DependentUpon>LoanPayment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoanPayment.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Multiples.Designer.vb">
       <DependentUpon>Multiples.vb</DependentUpon>
     </Compile>
@@ -245,6 +251,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="LoanCalculator.resx">
       <DependentUpon>LoanCalculator.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoanPayment.resx">
+      <DependentUpon>LoanPayment.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Multiples.resx">
       <DependentUpon>Multiples.vb</DependentUpon>

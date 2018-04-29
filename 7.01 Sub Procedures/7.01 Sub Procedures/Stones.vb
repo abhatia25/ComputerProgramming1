@@ -13,7 +13,7 @@ Public Class frmStones
 
     Private Sub NextToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NextToolStripMenuItem.Click
         Me.Hide()
-
+        frmLoanPayment.Show()
     End Sub
 
     Private Sub GameStart()
@@ -23,7 +23,6 @@ Public Class frmStones
 
     Private Sub btnTakeStones_Click(sender As Object, e As EventArgs) Handles btnTakeStones.Click
         PlayerMove()
-
         DisplayStonesLeft(intStonesLeft)
         lblComputerStones.Text = "Computer took " & intComputerStones & " stone(s)."
     End Sub
@@ -48,6 +47,8 @@ Public Class frmStones
                 MessageBox.Show("Please enter an integer between 1 and 3")
             ElseIf intPlayerStones < 1 Then
                 MessageBox.Show("Please enter an integer between 1 and 3")
+            ElseIf intPlayerStones = intStonesLeft Then
+                MessageBox.Show("Computer wins")
             Else
                 If intPlayerStones > intStonesLeft Then
                     MessageBox.Show("Illegal Move")
@@ -65,6 +66,8 @@ Public Class frmStones
         intComputerStones = random.Next(1, 3)
         If intComputerStones > intStonesLeft Then
             ComputerMove()
+        ElseIf intComputerStones = intStonesLeft Then
+            MessageBox.Show("Player wins")
         Else
             intStonesLeft = intStonesLeft - intComputerStones
         End If
