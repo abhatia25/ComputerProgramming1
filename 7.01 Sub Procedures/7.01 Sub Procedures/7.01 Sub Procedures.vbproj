@@ -78,6 +78,12 @@
     <Compile Include="BacteriaGrowth.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Bookstore.Designer.vb">
+      <DependentUpon>Bookstore.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Bookstore.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Candy.Designer.vb">
       <DependentUpon>Candy.vb</DependentUpon>
     </Compile>
@@ -88,6 +94,12 @@
       <DependentUpon>CandyJar.vb</DependentUpon>
     </Compile>
     <Compile Include="CandyJar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Depreciation.Designer.vb">
+      <DependentUpon>Depreciation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Depreciation.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DiceRolls.Designer.vb">
@@ -112,6 +124,12 @@
       <DependentUpon>Multiples.vb</DependentUpon>
     </Compile>
     <Compile Include="Multiples.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NumberBreakdown.Designer.vb">
+      <DependentUpon>NumberBreakdown.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NumberBreakdown.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="PoemChoiceDialogBox.Designer.vb">
@@ -183,11 +201,17 @@
     <EmbeddedResource Include="BacteriaGrowth.resx">
       <DependentUpon>BacteriaGrowth.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Bookstore.resx">
+      <DependentUpon>Bookstore.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Candy.resx">
       <DependentUpon>Candy.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CandyJar.resx">
       <DependentUpon>CandyJar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Depreciation.resx">
+      <DependentUpon>Depreciation.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DiceRolls.resx">
       <DependentUpon>DiceRolls.vb</DependentUpon>
@@ -200,6 +224,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Multiples.resx">
       <DependentUpon>Multiples.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NumberBreakdown.resx">
+      <DependentUpon>NumberBreakdown.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PoemChoiceDialogBox.resx">
       <DependentUpon>PoemChoiceDialogBox.vb</DependentUpon>
@@ -242,6 +269,9 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopping_cart.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
