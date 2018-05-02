@@ -72,6 +72,12 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GameOver.Designer.vb">
+      <DependentUpon>GameOver.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GameOver.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="HomePlanet.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -114,6 +120,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="GameOver.resx">
+      <DependentUpon>GameOver.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="HomePlanet.resx">
       <DependentUpon>HomePlanet.vb</DependentUpon>
     </EmbeddedResource>
@@ -149,6 +158,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\home_station.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\orb.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\handgun.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\power_crystal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\radiation_reflector.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\game_over.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
