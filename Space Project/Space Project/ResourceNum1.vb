@@ -2,7 +2,7 @@
 
     Private Sub btnGo_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnGo.Click
         Me.Hide()
-        frmCrystalRoom.Show()
+        CrystalRoom.Show()
     End Sub
 
     Private Sub btnLeave_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnLeave.Click

@@ -8,7 +8,7 @@ Public Class frmIntroduction
         frmSpaceship.Show()
     End Sub
 
-    Private Sub btnCheat_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCheat.Click
+    Private Sub lblIntroStory_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles lblIntroStory.Click
 
         GlobalVariables.intInventory1 = 1
         GlobalVariables.intInventory2 = 1

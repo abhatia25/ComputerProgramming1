@@ -72,16 +72,16 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmCrystalBasement.designer.vb">
-      <DependentUpon>frmCrystalBasement.vb</DependentUpon>
+    <Compile Include="CrystalBasement.designer.vb">
+      <DependentUpon>CrystalBasement.vb</DependentUpon>
     </Compile>
-    <Compile Include="frmCrystalBasement.vb">
+    <Compile Include="CrystalBasement.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmCrystalRoom.designer.vb">
-      <DependentUpon>frmCrystalRoom.vb</DependentUpon>
+    <Compile Include="CrystalRoom.designer.vb">
+      <DependentUpon>CrystalRoom.vb</DependentUpon>
     </Compile>
-    <Compile Include="frmCrystalRoom.vb">
+    <Compile Include="CrystalRoom.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GameOver.Designer.vb">
@@ -180,11 +180,11 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="frmCrystalBasement.resx">
-      <DependentUpon>frmCrystalBasement.vb</DependentUpon>
+    <EmbeddedResource Include="CrystalBasement.resx">
+      <DependentUpon>CrystalBasement.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmCrystalRoom.resx">
-      <DependentUpon>frmCrystalRoom.vb</DependentUpon>
+    <EmbeddedResource Include="CrystalRoom.resx">
+      <DependentUpon>CrystalRoom.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GameOver.resx">
       <DependentUpon>GameOver.vb</DependentUpon>

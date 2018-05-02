@@ -8,5 +8,6 @@ Public Class frmInventory
         lblInventory2.Text = "Quantity: " & GlobalVariables.intInventory2
         lblInventory3.Text = "Quantity: " & GlobalVariables.intInventory3
         lblInventory4.Text = "Quantity: " & GlobalVariables.intInventory4
+        lblInventory5.Text = "Quantity: " & GlobalVariables.intInventory5
     End Sub
 End Class

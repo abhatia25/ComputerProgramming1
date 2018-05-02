@@ -1,4 +1,4 @@
-﻿Public Class frmCrystalRoom
+﻿Public Class CrystalRoom
 
     Private Sub frmCrystalRoom_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
@@ -8,7 +8,7 @@
 
     Private Sub btnDown_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnDown.Click
         Me.Hide()
-        frmCrystalBasement.Show()
+        CrystalBasement.Show()
     End Sub
 
     Private Sub btnInventory_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnInventory.Click

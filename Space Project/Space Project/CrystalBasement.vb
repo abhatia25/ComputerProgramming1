@@ -1,6 +1,6 @@
-﻿Public Class frmCrystalBasement
+﻿Public Class CrystalBasement
 
-    Private Sub PictureBox1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles picCrystal.Click
+    Private Sub picCrystal_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles picCrystal.Click
         MessageBox.Show("Great job, you found the second objects! It has been added to your inventory, and you can use it whenever you need to. You are now going back to the Space Station.")
         GlobalVariables.intInventory2 += 1
         picCrystal.Visible = False
@@ -16,5 +16,4 @@
     Private Sub btnInventory_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnInventory.Click
         frmSpaceship.InventoryDialogBox()
     End Sub
-
 End Class
