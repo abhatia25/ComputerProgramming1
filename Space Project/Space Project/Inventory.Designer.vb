@@ -88,7 +88,7 @@ Partial Class frmInventory
         '
         'picInventory4
         '
-        Me.picInventory4.BackgroundImage = Global.Space_Project.My.Resources.Resources.radiation_reflector
+        Me.picInventory4.BackgroundImage = Global.Space_Project.My.Resources.Resources.power_crystal
         Me.picInventory4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.picInventory4.Location = New System.Drawing.Point(232, 12)
         Me.picInventory4.Name = "picInventory4"
@@ -98,7 +98,7 @@ Partial Class frmInventory
         '
         'picInventory3
         '
-        Me.picInventory3.BackgroundImage = Global.Space_Project.My.Resources.Resources.power_crystal
+        Me.picInventory3.BackgroundImage = Global.Space_Project.My.Resources.Resources.radiation_reflector
         Me.picInventory3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.picInventory3.Location = New System.Drawing.Point(232, 104)
         Me.picInventory3.Name = "picInventory3"

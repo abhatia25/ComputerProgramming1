@@ -111,8 +111,8 @@
     Private Sub btnPlace_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnPlace.Click
         lstPlaceItems.Items.Add("Power Crystal")
         lstPlaceItems.Items.Add("Shape Shifting Orb")
-        lstPlaceItems.Items.Add("HandGun")
-        lstPlaceItems.Items.Add("Shield Reflector")
+        lstPlaceItems.Items.Add("Handgun")
+        lstPlaceItems.Items.Add("Radiation Reflector")
         btnMake.Visible = True
     End Sub
 
