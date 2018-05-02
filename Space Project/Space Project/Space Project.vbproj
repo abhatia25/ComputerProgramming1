@@ -72,6 +72,18 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmCrystalBasement.designer.vb">
+      <DependentUpon>frmCrystalBasement.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCrystalBasement.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCrystalRoom.designer.vb">
+      <DependentUpon>frmCrystalRoom.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCrystalRoom.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="GameOver.Designer.vb">
       <DependentUpon>GameOver.vb</DependentUpon>
     </Compile>
@@ -97,6 +109,24 @@
     <Compile Include="Inventory.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="LaserRoom.designer.vb">
+      <DependentUpon>LaserRoom.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LaserRoom.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManufacturePlanet.designer.vb">
+      <DependentUpon>ManufacturePlanet.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ManufacturePlanet.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManufacureGuy.designer.vb">
+      <DependentUpon>ManufacureGuy.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ManufacureGuy.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -112,14 +142,50 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="ResouceNum1.designer.vb">
+      <DependentUpon>ResouceNum1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ResouceNum1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResouceNum2.designer.vb">
+      <DependentUpon>ResouceNum2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ResouceNum2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResouceNum3.designer.vb">
+      <DependentUpon>ResouceNum3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ResouceNum3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResouceNum4.designer.vb">
+      <DependentUpon>ResouceNum4.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ResouceNum4.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Spaceship.Designer.vb">
       <DependentUpon>Spaceship.vb</DependentUpon>
     </Compile>
     <Compile Include="Spaceship.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="SuperMarket.designer.vb">
+      <DependentUpon>SuperMarket.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SuperMarket.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="frmCrystalBasement.resx">
+      <DependentUpon>frmCrystalBasement.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCrystalRoom.resx">
+      <DependentUpon>frmCrystalRoom.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GameOver.resx">
       <DependentUpon>GameOver.vb</DependentUpon>
     </EmbeddedResource>
@@ -132,14 +198,38 @@
     <EmbeddedResource Include="Inventory.resx">
       <DependentUpon>Inventory.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="LaserRoom.resx">
+      <DependentUpon>LaserRoom.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManufacturePlanet.resx">
+      <DependentUpon>ManufacturePlanet.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManufacureGuy.resx">
+      <DependentUpon>ManufacureGuy.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="ResouceNum1.resx">
+      <DependentUpon>ResouceNum1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResouceNum2.resx">
+      <DependentUpon>ResouceNum2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResouceNum3.resx">
+      <DependentUpon>ResouceNum3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResouceNum4.resx">
+      <DependentUpon>ResouceNum4.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Spaceship.resx">
       <DependentUpon>Spaceship.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SuperMarket.resx">
+      <DependentUpon>SuperMarket.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -173,6 +263,54 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\game_over.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alien Planet.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Box.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Crystal Planet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Laser Room.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Manufacture Guy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Manufacturing Buildings.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Manufacturing Planet.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New Alien Planet.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Purple  Planet.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shape Shifting Planet.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Super Market.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Crystal Room for power.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Game Over.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Main Building %28CRYSTAL%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shield Protective Device.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Person.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

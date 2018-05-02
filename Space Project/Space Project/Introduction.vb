@@ -7,6 +7,15 @@ Public Class frmIntroduction
         Me.Hide()
         frmSpaceship.Show()
     End Sub
+
+    Private Sub btnCheat_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCheat.Click
+
+        GlobalVariables.intInventory1 = 1
+        GlobalVariables.intInventory2 = 1
+        GlobalVariables.intInventory3 = 1
+        GlobalVariables.intInventory4 = 1
+
+    End Sub
 End Class
 
 Public Class GlobalVariables

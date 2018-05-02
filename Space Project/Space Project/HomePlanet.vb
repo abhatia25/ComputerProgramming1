@@ -2,14 +2,9 @@
 'Home Planet
 '4/30/2018
 Public Class frmSpaceStation
-    Sub InventoryDialogBox()
-        Dim InventoryDB As New frmInventory()
-        'Show dialog box
-        InventoryDB.ShowDialog()
-    End Sub
 
     Private Sub btnInventory_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnInventory.Click
-        InventoryDialogBox()
+        frmSpaceship.InventoryDialogBox()
     End Sub
 
     Private Sub btnPlanet1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnPlanet1.Click
@@ -17,7 +12,7 @@ Public Class frmSpaceStation
             MessageBox.Show("You need to find the handgun to enter this planet")
         Else
             Me.Hide()
-            'frmResourceNum1.Show()
+            frmResouceNum1.Show()
         End If
     End Sub
 
@@ -26,7 +21,7 @@ Public Class frmSpaceStation
             MessageBox.Show("You need to find the crystal to enter this planet")
         Else
             Me.Hide()
-            'frmResourceNum4.Show()
+            frmResouceNum4.Show()
         End If
     End Sub
 
@@ -35,7 +30,7 @@ Public Class frmSpaceStation
             MessageBox.Show("You need to find the reflector to enter this planet")
         Else
             Me.Hide()
-            'frmResourceNum3.Show()
+            frmResouceNum3.Show()
         End If
     End Sub
 
@@ -50,7 +45,7 @@ Public Class frmSpaceStation
             MessageBox.Show("You need to find the orb to enter this planet")
         Else
             Me.Hide()
-            'frmResourceNum2.Show()
+            frmResouceNum2.Show()
         End If
     End Sub
 

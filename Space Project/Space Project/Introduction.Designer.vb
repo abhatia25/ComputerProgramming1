@@ -25,6 +25,7 @@ Partial Class frmIntroduction
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmIntroduction))
         Me.lblIntroStory = New System.Windows.Forms.Label()
         Me.btnDone = New System.Windows.Forms.Button()
+        Me.btnCheat = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'lblIntroStory
@@ -45,18 +46,28 @@ Partial Class frmIntroduction
         Me.btnDone.Text = "Done"
         Me.btnDone.UseVisualStyleBackColor = True
         '
-        'Introduction
+        'btnCheat
+        '
+        Me.btnCheat.Location = New System.Drawing.Point(12, 9)
+        Me.btnCheat.Name = "btnCheat"
+        Me.btnCheat.Size = New System.Drawing.Size(75, 23)
+        Me.btnCheat.TabIndex = 2
+        Me.btnCheat.UseVisualStyleBackColor = True
+        '
+        'frmIntroduction
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(284, 228)
+        Me.Controls.Add(Me.btnCheat)
         Me.Controls.Add(Me.btnDone)
         Me.Controls.Add(Me.lblIntroStory)
-        Me.Name = "Introduction"
+        Me.Name = "frmIntroduction"
         Me.Text = "Introduction"
         Me.ResumeLayout(False)
 
     End Sub
     Friend WithEvents lblIntroStory As System.Windows.Forms.Label
     Friend WithEvents btnDone As System.Windows.Forms.Button
+    Friend WithEvents btnCheat As System.Windows.Forms.Button
 End Class
