@@ -23,6 +23,8 @@ Partial Class frmResourceNum2
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.btnInventory = New System.Windows.Forms.Button()
+        Me.picOrb = New System.Windows.Forms.PictureBox()
+        CType(Me.picOrb, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btnInventory
@@ -34,6 +36,16 @@ Partial Class frmResourceNum2
         Me.btnInventory.Text = "Inventory"
         Me.btnInventory.UseVisualStyleBackColor = True
         '
+        'picOrb
+        '
+        Me.picOrb.BackgroundImage = Global.Space_Project.My.Resources.Resources.orb
+        Me.picOrb.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.picOrb.Location = New System.Drawing.Point(410, 37)
+        Me.picOrb.Name = "picOrb"
+        Me.picOrb.Size = New System.Drawing.Size(117, 113)
+        Me.picOrb.TabIndex = 1
+        Me.picOrb.TabStop = False
+        '
         'frmResourceNum2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -41,11 +53,14 @@ Partial Class frmResourceNum2
         Me.BackgroundImage = Global.Space_Project.My.Resources.Resources.Purple__Planet
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(821, 421)
+        Me.Controls.Add(Me.picOrb)
         Me.Controls.Add(Me.btnInventory)
         Me.Name = "frmResourceNum2"
         Me.Text = "Purple Aura Planet"
+        CType(Me.picOrb, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
     Friend WithEvents btnInventory As System.Windows.Forms.Button
+    Friend WithEvents picOrb As PictureBox
 End Class

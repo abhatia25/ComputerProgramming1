@@ -127,7 +127,9 @@
     Private Sub picShield_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles picShield.Click
 
         MessageBox.Show("You have obtained the Protective Shield")
-
+        GlobalVariables.intInventory5 += 1
+        picShield.Visible = False
+        MessageBox.Show("Now you will go back to the space station")
 
     End Sub
 

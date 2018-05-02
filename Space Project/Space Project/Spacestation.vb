@@ -50,7 +50,7 @@ Public Class frmSpaceStation
     End Sub
 
     Private Sub btnSpaceship_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnSpaceship.Click
-        If GlobalVariables.intInventory1 = 1 And GlobalVariables.intInventory2 = 1 And GlobalVariables.intInventory3 = 1 And GlobalVariables.intInventory4 = 1 Then
+        If GlobalVariables.intInventory1 > 0 And GlobalVariables.intInventory2 > 0 And GlobalVariables.intInventory3 > 0 And GlobalVariables.intInventory4 > 0 And GlobalVariables.intInventory5 > 0 Then
             MessageBox.Show("You win!")
             Me.Hide()
             frmSpaceship.Show()

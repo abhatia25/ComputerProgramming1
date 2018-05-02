@@ -2,7 +2,7 @@
 
     Private Sub picCrystal_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles picCrystal.Click
         MessageBox.Show("Great job, you found the second objects! It has been added to your inventory, and you can use it whenever you need to. You are now going back to the Space Station.")
-        GlobalVariables.intInventory2 += 1
+        GlobalVariables.intInventory4 += 1
         picCrystal.Visible = False
         Me.Hide()
         frmSpaceStation.Show()

@@ -90,11 +90,11 @@
     <Compile Include="GameOver.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="HomePlanet.vb">
+    <Compile Include="Spacestation.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="HomePlanet.Designer.vb">
-      <DependentUpon>HomePlanet.vb</DependentUpon>
+    <Compile Include="Spacestation.Designer.vb">
+      <DependentUpon>Spacestation.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Introduction.Designer.vb">
@@ -121,10 +121,10 @@
     <Compile Include="ManufacturePlanet.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ManufacureGuy.designer.vb">
-      <DependentUpon>ManufacureGuy.vb</DependentUpon>
+    <Compile Include="ManufactureGuy.designer.vb">
+      <DependentUpon>ManufactureGuy.vb</DependentUpon>
     </Compile>
-    <Compile Include="ManufacureGuy.vb">
+    <Compile Include="ManufactureGuy.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -189,8 +189,8 @@
     <EmbeddedResource Include="GameOver.resx">
       <DependentUpon>GameOver.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="HomePlanet.resx">
-      <DependentUpon>HomePlanet.vb</DependentUpon>
+    <EmbeddedResource Include="Spacestation.resx">
+      <DependentUpon>Spacestation.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Introduction.resx">
       <DependentUpon>Introduction.vb</DependentUpon>
@@ -204,8 +204,8 @@
     <EmbeddedResource Include="ManufacturePlanet.resx">
       <DependentUpon>ManufacturePlanet.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ManufacureGuy.resx">
-      <DependentUpon>ManufacureGuy.vb</DependentUpon>
+    <EmbeddedResource Include="ManufactureGuy.resx">
+      <DependentUpon>ManufactureGuy.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

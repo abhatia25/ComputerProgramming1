@@ -23,6 +23,8 @@ Partial Class frmResourceNum3
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.btnInventory = New System.Windows.Forms.Button()
+        Me.picReflector = New System.Windows.Forms.PictureBox()
+        CType(Me.picReflector, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btnInventory
@@ -34,6 +36,16 @@ Partial Class frmResourceNum3
         Me.btnInventory.Text = "Inventory"
         Me.btnInventory.UseVisualStyleBackColor = True
         '
+        'picReflector
+        '
+        Me.picReflector.BackgroundImage = Global.Space_Project.My.Resources.Resources.radiation_reflector
+        Me.picReflector.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.picReflector.Location = New System.Drawing.Point(267, 24)
+        Me.picReflector.Name = "picReflector"
+        Me.picReflector.Size = New System.Drawing.Size(104, 96)
+        Me.picReflector.TabIndex = 1
+        Me.picReflector.TabStop = False
+        '
         'frmResourceNum3
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -41,11 +53,14 @@ Partial Class frmResourceNum3
         Me.BackgroundImage = Global.Space_Project.My.Resources.Resources.Shape_Shifting_Planet
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(821, 420)
+        Me.Controls.Add(Me.picReflector)
         Me.Controls.Add(Me.btnInventory)
         Me.Name = "frmResourceNum3"
         Me.Text = "Shape Shifting Planet"
+        CType(Me.picReflector, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
     Friend WithEvents btnInventory As System.Windows.Forms.Button
+    Friend WithEvents picReflector As PictureBox
 End Class
