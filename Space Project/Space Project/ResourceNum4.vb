@@ -1,13 +1,13 @@
-﻿Public Class frmResouceNum1
+﻿Public Class frmResourceNum4
 
     Private Sub btnGo_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnGo.Click
         Me.Hide()
-        frmCrystalRoom.Show()
+        frmManufacturePlanet.Show()
     End Sub
 
     Private Sub btnLeave_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnLeave.Click
         Me.Hide()
-        frmSpaceship.Show()
+        frmSpaceStation.Show()
     End Sub
     Private Sub btnInventory_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnInventory.Click
         frmSpaceship.InventoryDialogBox()

@@ -31,16 +31,19 @@ Partial Class frmInventory
         Me.picInventory3 = New System.Windows.Forms.PictureBox()
         Me.picInventory2 = New System.Windows.Forms.PictureBox()
         Me.picInventory1 = New System.Windows.Forms.PictureBox()
+        Me.picInventory5 = New System.Windows.Forms.PictureBox()
+        Me.lblInventory5 = New System.Windows.Forms.Label()
         CType(Me.picInventory4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picInventory3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picInventory2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picInventory1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picInventory5, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btnOK
         '
         Me.btnOK.DialogResult = System.Windows.Forms.DialogResult.OK
-        Me.btnOK.Location = New System.Drawing.Point(12, 179)
+        Me.btnOK.Location = New System.Drawing.Point(12, 267)
         Me.btnOK.Name = "btnOK"
         Me.btnOK.Size = New System.Drawing.Size(425, 23)
         Me.btnOK.TabIndex = 0
@@ -123,11 +126,32 @@ Partial Class frmInventory
         Me.picInventory1.TabIndex = 1
         Me.picInventory1.TabStop = False
         '
+        'picInventory5
+        '
+        Me.picInventory5.BackgroundImage = Global.Space_Project.My.Resources.Resources.Shield_Protective_Device
+        Me.picInventory5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.picInventory5.Location = New System.Drawing.Point(113, 190)
+        Me.picInventory5.Name = "picInventory5"
+        Me.picInventory5.Size = New System.Drawing.Size(69, 59)
+        Me.picInventory5.TabIndex = 11
+        Me.picInventory5.TabStop = False
+        '
+        'lblInventory5
+        '
+        Me.lblInventory5.Location = New System.Drawing.Point(188, 190)
+        Me.lblInventory5.Name = "lblInventory5"
+        Me.lblInventory5.Size = New System.Drawing.Size(84, 59)
+        Me.lblInventory5.TabIndex = 12
+        Me.lblInventory5.Text = "Quantity: 0"
+        Me.lblInventory5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'frmInventory
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(449, 218)
+        Me.ClientSize = New System.Drawing.Size(449, 302)
+        Me.Controls.Add(Me.lblInventory5)
+        Me.Controls.Add(Me.picInventory5)
         Me.Controls.Add(Me.lblInventory4)
         Me.Controls.Add(Me.lblInventory3)
         Me.Controls.Add(Me.lblInventory2)
@@ -143,6 +167,7 @@ Partial Class frmInventory
         CType(Me.picInventory3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picInventory2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picInventory1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picInventory5, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -155,4 +180,6 @@ Partial Class frmInventory
     Friend WithEvents lblInventory2 As System.Windows.Forms.Label
     Friend WithEvents lblInventory3 As System.Windows.Forms.Label
     Friend WithEvents lblInventory4 As System.Windows.Forms.Label
+    Friend WithEvents picInventory5 As PictureBox
+    Friend WithEvents lblInventory5 As Label
 End Class

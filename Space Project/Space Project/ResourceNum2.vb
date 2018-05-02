@@ -1,4 +1,4 @@
-﻿Public Class frmResouceNum2
+﻿Public Class frmResourceNum2
 
     Private Sub btnInventory_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnInventory.Click
         frmSpaceship.InventoryDialogBox()

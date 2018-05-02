@@ -12,7 +12,7 @@ Public Class frmSpaceStation
             MessageBox.Show("You need to find the handgun to enter this planet")
         Else
             Me.Hide()
-            frmResouceNum1.Show()
+            frmResourceNum1.Show()
         End If
     End Sub
 
@@ -21,7 +21,7 @@ Public Class frmSpaceStation
             MessageBox.Show("You need to find the crystal to enter this planet")
         Else
             Me.Hide()
-            frmResouceNum4.Show()
+            frmResourceNum4.Show()
         End If
     End Sub
 
@@ -30,7 +30,7 @@ Public Class frmSpaceStation
             MessageBox.Show("You need to find the reflector to enter this planet")
         Else
             Me.Hide()
-            frmResouceNum3.Show()
+            frmResourceNum3.Show()
         End If
     End Sub
 
@@ -45,7 +45,7 @@ Public Class frmSpaceStation
             MessageBox.Show("You need to find the orb to enter this planet")
         Else
             Me.Hide()
-            frmResouceNum2.Show()
+            frmResourceNum2.Show()
         End If
     End Sub
 

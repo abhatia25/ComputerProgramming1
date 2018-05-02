@@ -142,28 +142,28 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="ResouceNum1.designer.vb">
-      <DependentUpon>ResouceNum1.vb</DependentUpon>
+    <Compile Include="ResourceNum1.designer.vb">
+      <DependentUpon>ResourceNum1.vb</DependentUpon>
     </Compile>
-    <Compile Include="ResouceNum1.vb">
+    <Compile Include="ResourceNum1.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ResouceNum2.designer.vb">
-      <DependentUpon>ResouceNum2.vb</DependentUpon>
+    <Compile Include="ResourceNum2.designer.vb">
+      <DependentUpon>ResourceNum2.vb</DependentUpon>
     </Compile>
-    <Compile Include="ResouceNum2.vb">
+    <Compile Include="ResourceNum2.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ResouceNum3.designer.vb">
-      <DependentUpon>ResouceNum3.vb</DependentUpon>
+    <Compile Include="ResourceNum3.designer.vb">
+      <DependentUpon>ResourceNum3.vb</DependentUpon>
     </Compile>
-    <Compile Include="ResouceNum3.vb">
+    <Compile Include="ResourceNum3.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ResouceNum4.designer.vb">
-      <DependentUpon>ResouceNum4.vb</DependentUpon>
+    <Compile Include="ResourceNum4.designer.vb">
+      <DependentUpon>ResourceNum4.vb</DependentUpon>
     </Compile>
-    <Compile Include="ResouceNum4.vb">
+    <Compile Include="ResourceNum4.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Spaceship.Designer.vb">
@@ -213,17 +213,17 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="ResouceNum1.resx">
-      <DependentUpon>ResouceNum1.vb</DependentUpon>
+    <EmbeddedResource Include="ResourceNum1.resx">
+      <DependentUpon>ResourceNum1.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ResouceNum2.resx">
-      <DependentUpon>ResouceNum2.vb</DependentUpon>
+    <EmbeddedResource Include="ResourceNum2.resx">
+      <DependentUpon>ResourceNum2.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ResouceNum3.resx">
-      <DependentUpon>ResouceNum3.vb</DependentUpon>
+    <EmbeddedResource Include="ResourceNum3.resx">
+      <DependentUpon>ResourceNum3.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ResouceNum4.resx">
-      <DependentUpon>ResouceNum4.vb</DependentUpon>
+    <EmbeddedResource Include="ResourceNum4.resx">
+      <DependentUpon>ResourceNum4.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Spaceship.resx">
       <DependentUpon>Spaceship.vb</DependentUpon>
