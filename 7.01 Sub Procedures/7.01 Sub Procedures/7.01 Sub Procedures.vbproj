@@ -138,6 +138,12 @@
     <Compile Include="LoanPayment.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="LumberyardHelper.Designer.vb">
+      <DependentUpon>LumberyardHelper.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LumberyardHelper.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Multiples.Designer.vb">
       <DependentUpon>Multiples.vb</DependentUpon>
     </Compile>
@@ -254,6 +260,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="LoanPayment.resx">
       <DependentUpon>LoanPayment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LumberyardHelper.resx">
+      <DependentUpon>LumberyardHelper.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Multiples.resx">
       <DependentUpon>Multiples.vb</DependentUpon>
