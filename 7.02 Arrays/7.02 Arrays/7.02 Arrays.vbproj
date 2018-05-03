@@ -73,6 +73,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FavoriteFoods.Designer.vb">
+      <DependentUpon>FavoriteFoods.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FavoriteFoods.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FriendsArray.Designer.vb">
       <DependentUpon>FriendsArray.vb</DependentUpon>
     </Compile>
@@ -96,6 +102,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="FavoriteFoods.resx">
+      <DependentUpon>FavoriteFoods.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FriendsArray.resx">
       <DependentUpon>FriendsArray.vb</DependentUpon>
     </EmbeddedResource>

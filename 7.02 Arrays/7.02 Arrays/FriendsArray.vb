@@ -27,6 +27,6 @@ Public Class frmFriendsArray
 
     Private Sub NextToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NextToolStripMenuItem.Click
         Me.Hide()
-
+        frmFavoriteFoods.Show()
     End Sub
 End Class
