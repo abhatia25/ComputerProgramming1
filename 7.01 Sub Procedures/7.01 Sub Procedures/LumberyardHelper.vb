@@ -30,4 +30,13 @@ Public Class frmLumberyardHelper
             End If
         End If
     End Sub
+
+    Private Sub ExitToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ExitToolStripMenuItem.Click
+        End
+    End Sub
+
+    Private Sub NextToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NextToolStripMenuItem.Click
+        Me.Hide()
+        frmMetricConversion.show()
+    End Sub
 End Class

@@ -144,6 +144,12 @@
     <Compile Include="LumberyardHelper.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="MetricConversion.Designer.vb">
+      <DependentUpon>MetricConversion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MetricConversion.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Multiples.Designer.vb">
       <DependentUpon>Multiples.vb</DependentUpon>
     </Compile>
@@ -263,6 +269,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="LumberyardHelper.resx">
       <DependentUpon>LumberyardHelper.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetricConversion.resx">
+      <DependentUpon>MetricConversion.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Multiples.resx">
       <DependentUpon>Multiples.vb</DependentUpon>
