@@ -10,7 +10,7 @@ Public Class frmFavoriteFoods
 
     Private Sub NextToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NextToolStripMenuItem.Click
         Me.Hide()
-
+        frmTestData.Show()
     End Sub
     Private Sub enterFoods(ByRef strFoodsArr() As String)
         'Add string values to the array
