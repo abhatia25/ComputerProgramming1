@@ -25,7 +25,7 @@ Public Class frmLumberyardHelper
         If Double.TryParse(txtLength.Text, dblBoardLength) Then
             If Double.TryParse(txtThickness.Text, dblBoardThickness) Then
                 If Double.TryParse(txtWidth.Text, dblBoardWidth) Then
-                    dblBoardFeet = ((dblBoardThickness * (dblBoardLength * dblBoardWidth) * dblBoardWidth) / (dblBoardWidth * (dblBoardWidth * dblBoardWidth * dblBoardThickness)))
+                    dblBoardFeet = ((dblBoardThickness * (dblBoardLength * dblBoardWidth) * dblBoardWidth) / (dblBoardWidth * dblBoardWidth * dblBoardThickness))
                 End If
             End If
         End If
