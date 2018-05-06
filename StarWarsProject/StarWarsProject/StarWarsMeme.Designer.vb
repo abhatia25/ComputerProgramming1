@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class frmEnemy2
+Partial Class frmStarWarsMeme
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -24,13 +24,15 @@ Partial Class frmEnemy2
     Private Sub InitializeComponent()
         Me.SuspendLayout()
         '
-        'frmEnemy2
+        'frmStarWarsMeme
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackgroundImage = Global.StarWarsProject.My.Resources.Resources.star_wars_awesome
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(534, 462)
-        Me.Name = "frmEnemy2"
-        Me.Text = "Enemy 2"
+        Me.Name = "frmStarWarsMeme"
+        Me.Text = "Star Wars Meme"
         Me.ResumeLayout(False)
 
     End Sub

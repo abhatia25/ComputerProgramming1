@@ -7,7 +7,7 @@ Public Class frmEnemy1
 
     Private Sub btnNext_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnNext.Click
         Me.Hide()
-        frmEnemy2.Show()
+        frmStarWarsMeme.Show()
     End Sub
 
     Private Sub frmEnemy1_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles Me.KeyDown
