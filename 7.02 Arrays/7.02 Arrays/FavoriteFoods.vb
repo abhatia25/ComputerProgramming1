@@ -15,8 +15,7 @@ Public Class frmFavoriteFoods
     Private Sub enterFoods(ByRef strFoodsArr() As String)
         'Add string values to the array
         For i As Integer = 0 To strFoodsArr.Length - 1
-            strFoodsArr(i) = InputBox("Enter one of your favorite 
-			foods", "My Favorite Foods")
+            strFoodsArr(i) = InputBox("Enter one of your favorite foods", "My Favorite Foods")
         Next i
     End Sub
 

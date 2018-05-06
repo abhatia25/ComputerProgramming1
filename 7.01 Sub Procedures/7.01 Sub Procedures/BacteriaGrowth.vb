@@ -25,7 +25,7 @@ Public Class frmBacteriaGrowth
 
     Private Sub NextToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NextToolStripMenuItem.Click
         Me.Hide()
-        frmDepreciation.Hide()
+        frmDepreciation.Show()
     End Sub
 
     Private Sub ExitToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ExitToolStripMenuItem.Click

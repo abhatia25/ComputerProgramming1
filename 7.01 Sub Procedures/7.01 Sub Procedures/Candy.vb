@@ -11,4 +11,8 @@ Public Class frmCandy
         Me.Hide()
         frmShakespeare.Show()
     End Sub
+
+    Private Sub btnCost_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCost.Click
+
+    End Sub
 End Class
