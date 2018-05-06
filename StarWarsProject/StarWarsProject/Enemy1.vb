@@ -19,7 +19,24 @@ Public Class frmEnemy1
         End If
 
         If e.KeyCode = Keys.Left Then
+            currentLocation = picPlayer.Location
+            nextLocation = picPlayer.Location
+            nextLocation.X = currentLocation.X - 10
+            picPlayer.Location = nextLocation
+        End If
 
+        If e.KeyCode = Keys.Up Then
+            currentLocation = picPlayer.Location
+            nextLocation = picPlayer.Location
+            nextLocation.X = currentLocation.Y + 10
+            picPlayer.Location = nextLocation
+        End If
+
+        If e.KeyCode = Keys.Down Then
+            currentLocation = picPlayer.Location
+            nextLocation = picPlayer.Location
+            nextLocation.X = currentLocation.Y - 10
+            picPlayer.Location = nextLocation
         End If
         If e.KeyCode = Keys.F Then
             If prgPlayerHealth.Value > 0 Then
