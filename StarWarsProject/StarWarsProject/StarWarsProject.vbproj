@@ -79,10 +79,10 @@
       <DependentUpon>Enemy1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Enemy2.Designer.vb">
-      <DependentUpon>Enemy2.vb</DependentUpon>
+    <Compile Include="StarWarsMeme.Designer.vb">
+      <DependentUpon>StarWarsMeme.vb</DependentUpon>
     </Compile>
-    <Compile Include="Enemy2.vb">
+    <Compile Include="StarWarsMeme.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -105,8 +105,8 @@
     <EmbeddedResource Include="Enemy1.resx">
       <DependentUpon>Enemy1.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Enemy2.resx">
-      <DependentUpon>Enemy2.vb</DependentUpon>
+    <EmbeddedResource Include="StarWarsMeme.resx">
+      <DependentUpon>StarWarsMeme.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -134,6 +134,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\ObiWan.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\star_wars_awesome.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
