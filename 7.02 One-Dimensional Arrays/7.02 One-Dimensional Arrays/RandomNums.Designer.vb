@@ -28,7 +28,8 @@ Partial Class frmRandomNums
         Me.btnGenerate = New System.Windows.Forms.Button()
         Me.btnHigh = New System.Windows.Forms.Button()
         Me.btnLow = New System.Windows.Forms.Button()
-        Me.ListBox1 = New System.Windows.Forms.ListBox()
+        Me.lstDisplay = New System.Windows.Forms.ListBox()
+        Me.lblAnswer = New System.Windows.Forms.Label()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -80,20 +81,29 @@ Partial Class frmRandomNums
         Me.btnLow.Text = "Show Low"
         Me.btnLow.UseVisualStyleBackColor = True
         '
-        'ListBox1
+        'lstDisplay
         '
-        Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.Location = New System.Drawing.Point(12, 86)
-        Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(260, 160)
-        Me.ListBox1.TabIndex = 4
+        Me.lstDisplay.FormattingEnabled = True
+        Me.lstDisplay.Location = New System.Drawing.Point(12, 86)
+        Me.lstDisplay.Name = "lstDisplay"
+        Me.lstDisplay.Size = New System.Drawing.Size(260, 160)
+        Me.lstDisplay.TabIndex = 4
+        '
+        'lblAnswer
+        '
+        Me.lblAnswer.Location = New System.Drawing.Point(12, 249)
+        Me.lblAnswer.Name = "lblAnswer"
+        Me.lblAnswer.Size = New System.Drawing.Size(260, 56)
+        Me.lblAnswer.TabIndex = 5
+        Me.lblAnswer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'frmRandomNums
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(284, 327)
-        Me.Controls.Add(Me.ListBox1)
+        Me.ClientSize = New System.Drawing.Size(284, 314)
+        Me.Controls.Add(Me.lblAnswer)
+        Me.Controls.Add(Me.lstDisplay)
         Me.Controls.Add(Me.btnLow)
         Me.Controls.Add(Me.btnHigh)
         Me.Controls.Add(Me.btnGenerate)
@@ -113,5 +123,6 @@ Partial Class frmRandomNums
     Friend WithEvents btnGenerate As System.Windows.Forms.Button
     Friend WithEvents btnHigh As System.Windows.Forms.Button
     Friend WithEvents btnLow As System.Windows.Forms.Button
-    Friend WithEvents ListBox1 As System.Windows.Forms.ListBox
+    Friend WithEvents lstDisplay As System.Windows.Forms.ListBox
+    Friend WithEvents lblAnswer As Label
 End Class

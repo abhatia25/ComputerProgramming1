@@ -14,6 +14,16 @@ Public Class frmDrawCards
     Dim int10Times As Integer = 0
 
     Private Sub btnDrawCards_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnDrawCards.Click
+        intNumDraws = 0
+        int2Times = 0
+        int3Times = 0
+        int4Times = 0
+        int5Times = 0
+        int6Times = 0
+        int7Times = 0
+        int8Times = 0
+        int9Times = 0
+        int10Times = 0
         Try
             intNumDraws = txtDraws.Text
         Catch ex As Exception
@@ -24,7 +34,7 @@ Public Class frmDrawCards
 
         For i As Integer = 0 To intCardDraws.Length - 1
             Randomize()
-            intCardDraws(i) = (Rnd() * 10) + 1
+            intCardDraws(i) = (Rnd() * 10) + 2
         Next i
 
         Array.Sort(intCardDraws)
