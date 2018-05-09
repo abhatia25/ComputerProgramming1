@@ -32,7 +32,7 @@ Namespace My
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = Global._7._02_One_Dimensional_Arrays.frmTrackTemperatures
+            Me.MainForm = Global._7._03_Math_Functions.frmMathFun
         End Sub
     End Class
 End Namespace

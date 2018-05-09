@@ -6,11 +6,11 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{DEE4D662-6323-42C3-9B4A-00F1C47CFA91}</ProjectGuid>
+    <ProjectGuid>{36D0DA3E-405D-42CF-9FB5-D648CB2F88E0}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>_7._02_One_Dimensional_Arrays.My.MyApplication</StartupObject>
-    <RootNamespace>_7._02_One_Dimensional_Arrays</RootNamespace>
-    <AssemblyName>7.02 One-Dimensional Arrays</AssemblyName>
+    <StartupObject>ReDimArrays.My.MyApplication</StartupObject>
+    <RootNamespace>ReDimArrays</RootNamespace>
+    <AssemblyName>ReDimArrays</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
@@ -23,7 +23,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>7.02 One-Dimensional Arrays.xml</DocumentationFile>
+    <DocumentationFile>ReDimArrays.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
@@ -33,7 +33,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>7.02 One-Dimensional Arrays.xml</DocumentationFile>
+    <DocumentationFile>ReDimArrays.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
@@ -72,35 +72,11 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Birthdays.Designer.vb">
-      <DependentUpon>Birthdays.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Birthdays.vb">
+    <Compile Include="ReDimArrays.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DrawCards.Designer.vb">
-      <DependentUpon>DrawCards.vb</DependentUpon>
-    </Compile>
-    <Compile Include="DrawCards.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GPAArray.Designer.vb">
-      <DependentUpon>GPAArray.vb</DependentUpon>
-    </Compile>
-    <Compile Include="GPAArray.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="RandomNums.Designer.vb">
-      <DependentUpon>RandomNums.vb</DependentUpon>
-    </Compile>
-    <Compile Include="RandomNums.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Rates.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Rates.Designer.vb">
-      <DependentUpon>Rates.vb</DependentUpon>
+    <Compile Include="ReDimArrays.Designer.vb">
+      <DependentUpon>ReDimArrays.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -118,46 +94,16 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="Scores.Designer.vb">
-      <DependentUpon>Scores.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Scores.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="TrackTemperatures.Designer.vb">
-      <DependentUpon>TrackTemperatures.vb</DependentUpon>
-    </Compile>
-    <Compile Include="TrackTemperatures.vb">
-      <SubType>Form</SubType>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Birthdays.resx">
-      <DependentUpon>Birthdays.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="DrawCards.resx">
-      <DependentUpon>DrawCards.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GPAArray.resx">
-      <DependentUpon>GPAArray.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="RandomNums.resx">
-      <DependentUpon>RandomNums.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Rates.resx">
-      <DependentUpon>Rates.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Scores.resx">
-      <DependentUpon>Scores.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="TrackTemperatures.resx">
-      <DependentUpon>TrackTemperatures.vb</DependentUpon>
+    <EmbeddedResource Include="ReDimArrays.resx">
+      <DependentUpon>ReDimArrays.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

@@ -14,9 +14,9 @@ Public Class frmBirthdays
         For i As Integer = 0 To birthdates.Length - 1
             birthdates(i) = InputBox("Please enter a birthdate", "Birthdates")
         Next i
-        lstDisplay.Items.Add(names(0) & "" & birthdates(0))
-        lstDisplay.Items.Add(names(1) & "" & birthdates(1))
-        lstDisplay.Items.Add(names(2) & "" & birthdates(2))
+        lstDisplay.Items.Add(names(0) & " " & birthdates(0))
+        lstDisplay.Items.Add(names(1) & " " & birthdates(1))
+        lstDisplay.Items.Add(names(2) & " " & birthdates(2))
     End Sub
 
     Private Sub ExitToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ExitToolStripMenuItem.Click

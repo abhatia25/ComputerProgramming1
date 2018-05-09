@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "7.03 Math Functions", "7.03 Math Functions\7.03 Math Functions.vbproj", "{07BD3EF4-2D4A-4201-9D0F-853E81C6D31D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{07BD3EF4-2D4A-4201-9D0F-853E81C6D31D}.Debug|x86.ActiveCfg = Debug|x86
+		{07BD3EF4-2D4A-4201-9D0F-853E81C6D31D}.Debug|x86.Build.0 = Debug|x86
+		{07BD3EF4-2D4A-4201-9D0F-853E81C6D31D}.Release|x86.ActiveCfg = Release|x86
+		{07BD3EF4-2D4A-4201-9D0F-853E81C6D31D}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
