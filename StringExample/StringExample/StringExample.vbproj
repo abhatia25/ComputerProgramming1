@@ -6,11 +6,11 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{07BD3EF4-2D4A-4201-9D0F-853E81C6D31D}</ProjectGuid>
+    <ProjectGuid>{4A0B2D3A-8FD5-4591-B4D4-5637EE0B1308}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>_7._03_Math_Functions.My.MyApplication</StartupObject>
-    <RootNamespace>_7._03_Math_Functions</RootNamespace>
-    <AssemblyName>7.03 Math Functions</AssemblyName>
+    <StartupObject>StringExample.My.MyApplication</StartupObject>
+    <RootNamespace>StringExample</RootNamespace>
+    <AssemblyName>StringExample</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
@@ -23,7 +23,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>7.03 Math Functions.xml</DocumentationFile>
+    <DocumentationFile>StringExample.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
@@ -33,7 +33,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>7.03 Math Functions.xml</DocumentationFile>
+    <DocumentationFile>StringExample.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
@@ -72,17 +72,11 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BookStoreOrder.Designer.vb">
-      <DependentUpon>BookStoreOrder.vb</DependentUpon>
-    </Compile>
-    <Compile Include="BookStoreOrder.vb">
+    <Compile Include="StringExample.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MathFun.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MathFun.Designer.vb">
-      <DependentUpon>MathFun.vb</DependentUpon>
+    <Compile Include="StringExample.Designer.vb">
+      <DependentUpon>StringExample.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -100,73 +94,16 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="MyInitials.Designer.vb">
-      <DependentUpon>MyInitials.vb</DependentUpon>
-    </Compile>
-    <Compile Include="MyInitials.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MyName.Designer.vb">
-      <DependentUpon>MyName.vb</DependentUpon>
-    </Compile>
-    <Compile Include="MyName.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="NewWord.Designer.vb">
-      <DependentUpon>NewWord.vb</DependentUpon>
-    </Compile>
-    <Compile Include="NewWord.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PitchPennies.Designer.vb">
-      <DependentUpon>PitchPennies.vb</DependentUpon>
-    </Compile>
-    <Compile Include="PitchPennies.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="RemoveWord.Designer.vb">
-      <DependentUpon>RemoveWord.vb</DependentUpon>
-    </Compile>
-    <Compile Include="RemoveWord.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="WhichIsFirst.Designer.vb">
-      <DependentUpon>WhichIsFirst.vb</DependentUpon>
-    </Compile>
-    <Compile Include="WhichIsFirst.vb">
-      <SubType>Form</SubType>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="BookStoreOrder.resx">
-      <DependentUpon>BookStoreOrder.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MathFun.resx">
-      <DependentUpon>MathFun.vb</DependentUpon>
+    <EmbeddedResource Include="StringExample.resx">
+      <DependentUpon>StringExample.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MyInitials.resx">
-      <DependentUpon>MyInitials.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MyName.resx">
-      <DependentUpon>MyName.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="NewWord.resx">
-      <DependentUpon>NewWord.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PitchPennies.resx">
-      <DependentUpon>PitchPennies.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="RemoveWord.resx">
-      <DependentUpon>RemoveWord.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="WhichIsFirst.resx">
-      <DependentUpon>WhichIsFirst.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
