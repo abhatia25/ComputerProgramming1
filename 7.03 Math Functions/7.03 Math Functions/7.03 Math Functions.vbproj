@@ -130,6 +130,12 @@
     <Compile Include="RemoveWord.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="SquareRootRounding.Designer.vb">
+      <DependentUpon>SquareRootRounding.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SquareRootRounding.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="WhichIsFirst.Designer.vb">
       <DependentUpon>WhichIsFirst.vb</DependentUpon>
     </Compile>
@@ -164,6 +170,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="RemoveWord.resx">
       <DependentUpon>RemoveWord.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SquareRootRounding.resx">
+      <DependentUpon>SquareRootRounding.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WhichIsFirst.resx">
       <DependentUpon>WhichIsFirst.vb</DependentUpon>

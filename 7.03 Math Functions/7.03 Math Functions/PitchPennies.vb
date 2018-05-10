@@ -205,4 +205,13 @@ Public Class frmPitchPennies
         Randomize()
         Return Int((highNum - lowNum + 1) * Rnd() + lowNum)
     End Function
+
+    Private Sub ExitToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ExitToolStripMenuItem.Click
+        End
+    End Sub
+
+    Private Sub NextToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NextToolStripMenuItem.Click
+        Me.Hide()
+
+    End Sub
 End Class

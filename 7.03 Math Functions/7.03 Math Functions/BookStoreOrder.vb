@@ -21,6 +21,6 @@ Public Class frmBookStoreOrder
 
     Private Sub NextToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles NextToolStripMenuItem.Click
         Me.Hide()
-
+        frmPitchPennies.Show()
     End Sub
 End Class

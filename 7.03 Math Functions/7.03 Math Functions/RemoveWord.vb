@@ -28,6 +28,6 @@ Public Class frmRemoveWord
 
     Private Sub NextToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles NextToolStripMenuItem.Click
         Me.Hide()
-        frmBookStoreOrder.Show()
+        frmSquareRootRounding.Show()
     End Sub
 End Class
