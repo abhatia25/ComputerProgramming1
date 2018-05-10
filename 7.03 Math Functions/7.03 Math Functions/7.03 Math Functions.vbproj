@@ -124,6 +124,12 @@
     <Compile Include="PitchPennies.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="PlayGolf.Designer.vb">
+      <DependentUpon>PlayGolf.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PlayGolf.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="RemoveWord.Designer.vb">
       <DependentUpon>RemoveWord.vb</DependentUpon>
     </Compile>
@@ -167,6 +173,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PitchPennies.resx">
       <DependentUpon>PitchPennies.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlayGolf.resx">
+      <DependentUpon>PlayGolf.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="RemoveWord.resx">
       <DependentUpon>RemoveWord.vb</DependentUpon>

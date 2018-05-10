@@ -212,6 +212,10 @@ Public Class frmPitchPennies
 
     Private Sub NextToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NextToolStripMenuItem.Click
         Me.Hide()
+        PlayGolf.Show()
+    End Sub
 
+    Private Sub frmPitchPennies_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.btnTossPennies.Enabled = False
     End Sub
 End Class
