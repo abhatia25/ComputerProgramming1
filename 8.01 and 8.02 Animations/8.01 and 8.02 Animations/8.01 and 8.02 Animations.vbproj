@@ -84,6 +84,12 @@
     <Compile Include="BouncingBall.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="ChangeImage.Designer.vb">
+      <DependentUpon>ChangeImage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeImage.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="HotAirBalloon.Designer.vb">
       <DependentUpon>HotAirBalloon.vb</DependentUpon>
     </Compile>
@@ -143,6 +149,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="BouncingBall.resx">
       <DependentUpon>BouncingBall.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangeImage.resx">
+      <DependentUpon>ChangeImage.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HotAirBalloon.resx">
       <DependentUpon>HotAirBalloon.vb</DependentUpon>
