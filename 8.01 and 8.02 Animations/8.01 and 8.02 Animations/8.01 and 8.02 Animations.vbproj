@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B00F935D-7A2A-4235-BBA6-3F394B04854E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>_8._01_and_8._02_Animations.My.MyApplication</StartupObject>
+    <RootNamespace>_8._01_and_8._02_Animations</RootNamespace>
+    <AssemblyName>8.01 and 8.02 Animations</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>8.01 and 8.02 Animations.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>8.01 and 8.02 Animations.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="100DiceRolls.Designer.vb">
+      <DependentUpon>100DiceRolls.vb</DependentUpon>
+    </Compile>
+    <Compile Include="100DiceRolls.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BouncingBall.Designer.vb">
+      <DependentUpon>BouncingBall.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BouncingBall.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HotAirBalloon.Designer.vb">
+      <DependentUpon>HotAirBalloon.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HotAirBalloon.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kite.Designer.vb">
+      <DependentUpon>Kite.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Kite.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MovingPie.Designer.vb">
+      <DependentUpon>MovingPie.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MovingPie.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MovingRectangle.Designer.vb">
+      <DependentUpon>MovingRectangle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MovingRectangle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Shapes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Shapes.Designer.vb">
+      <DependentUpon>Shapes.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="StopLight.Designer.vb">
+      <DependentUpon>StopLight.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StopLight.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="100DiceRolls.resx">
+      <DependentUpon>100DiceRolls.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BouncingBall.resx">
+      <DependentUpon>BouncingBall.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HotAirBalloon.resx">
+      <DependentUpon>HotAirBalloon.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kite.resx">
+      <DependentUpon>Kite.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MovingPie.resx">
+      <DependentUpon>MovingPie.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MovingRectangle.resx">
+      <DependentUpon>MovingRectangle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Shapes.resx">
+      <DependentUpon>Shapes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StopLight.resx">
+      <DependentUpon>StopLight.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ball3.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ball2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ball1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ball0.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\star.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\heart.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\happyface.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clock.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hotairballoon3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hotairballoon2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hotairballoon1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stopLightYellow.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stopLightRed.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stopLightGreen.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stopLight.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\purpleStar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\greenTriangle.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blueCircle.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\redSq.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
