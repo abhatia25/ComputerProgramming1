@@ -90,6 +90,12 @@
     <Compile Include="ChangeImage.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="DrawAFace.Designer.vb">
+      <DependentUpon>DrawAFace.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DrawAFace.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="HotAirBalloon.Designer.vb">
       <DependentUpon>HotAirBalloon.vb</DependentUpon>
     </Compile>
@@ -152,6 +158,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ChangeImage.resx">
       <DependentUpon>ChangeImage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DrawAFace.resx">
+      <DependentUpon>DrawAFace.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HotAirBalloon.resx">
       <DependentUpon>HotAirBalloon.vb</DependentUpon>

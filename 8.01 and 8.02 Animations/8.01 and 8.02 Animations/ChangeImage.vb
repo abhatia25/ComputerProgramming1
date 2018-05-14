@@ -16,4 +16,13 @@ Public Class frmChangeImage
                 Me.BackgroundImage = My.Resources.star
         End Select
     End Sub
+
+    Private Sub ExitToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ExitToolStripMenuItem.Click
+        End
+    End Sub
+
+    Private Sub NextToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NextToolStripMenuItem.Click
+        Me.Hide()
+        frmDrawAFace.Show()
+    End Sub
 End Class
