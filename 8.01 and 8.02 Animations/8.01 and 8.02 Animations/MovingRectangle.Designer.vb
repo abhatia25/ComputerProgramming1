@@ -33,6 +33,9 @@ Partial Class frmMovingRectangle
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
+        'tmrStart
+        '
+        '
         'MenuStrip1
         '
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ExitToolStripMenuItem, Me.NextToolStripMenuItem, Me.OptionsToolStripMenuItem})

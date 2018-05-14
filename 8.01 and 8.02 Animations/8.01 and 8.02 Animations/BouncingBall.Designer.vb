@@ -27,7 +27,9 @@ Partial Class frmBouncingBall
         Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.NextToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.tmrAnimatedBall = New System.Windows.Forms.Timer(Me.components)
+        Me.picBall = New System.Windows.Forms.PictureBox()
         Me.MenuStrip1.SuspendLayout()
+        CType(Me.picBall, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'MenuStrip1
@@ -51,17 +53,30 @@ Partial Class frmBouncingBall
         Me.NextToolStripMenuItem.Size = New System.Drawing.Size(43, 20)
         Me.NextToolStripMenuItem.Text = "&Next"
         '
+        'tmrAnimatedBall
+        '
+        '
+        'picBall
+        '
+        Me.picBall.Location = New System.Drawing.Point(12, 27)
+        Me.picBall.Name = "picBall"
+        Me.picBall.Size = New System.Drawing.Size(260, 223)
+        Me.picBall.TabIndex = 1
+        Me.picBall.TabStop = False
+        '
         'frmBouncingBall
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(284, 262)
+        Me.Controls.Add(Me.picBall)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "frmBouncingBall"
         Me.Text = "Bouncing Ball"
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
+        CType(Me.picBall, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -70,4 +85,5 @@ Partial Class frmBouncingBall
     Friend WithEvents ExitToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents NextToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents tmrAnimatedBall As System.Windows.Forms.Timer
+    Friend WithEvents picBall As PictureBox
 End Class

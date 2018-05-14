@@ -22,10 +22,14 @@ Partial Class frmKite
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.NextToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.picImage = New System.Windows.Forms.PictureBox()
+        Me.tmrChangeImage = New System.Windows.Forms.Timer(Me.components)
         Me.MenuStrip1.SuspendLayout()
+        CType(Me.picImage, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'MenuStrip1
@@ -49,17 +53,27 @@ Partial Class frmKite
         Me.NextToolStripMenuItem.Size = New System.Drawing.Size(43, 20)
         Me.NextToolStripMenuItem.Text = "&Next"
         '
+        'picImage
+        '
+        Me.picImage.Location = New System.Drawing.Point(12, 27)
+        Me.picImage.Name = "picImage"
+        Me.picImage.Size = New System.Drawing.Size(260, 223)
+        Me.picImage.TabIndex = 1
+        Me.picImage.TabStop = False
+        '
         'frmKite
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(284, 262)
+        Me.Controls.Add(Me.picImage)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "frmKite"
         Me.Text = "Kite"
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
+        CType(Me.picImage, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -67,4 +81,6 @@ Partial Class frmKite
     Friend WithEvents MenuStrip1 As System.Windows.Forms.MenuStrip
     Friend WithEvents ExitToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents NextToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents picImage As PictureBox
+    Friend WithEvents tmrChangeImage As Timer
 End Class

@@ -27,4 +27,8 @@ Public Class frmBouncingBall
                 Me.picBall.Image = My.Resources.ball3
         End Select
     End Sub
+
+    Private Sub frmBouncingBall_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        tmrAnimatedBall.Enabled = True
+    End Sub
 End Class

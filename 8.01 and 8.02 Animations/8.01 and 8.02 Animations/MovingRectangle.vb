@@ -34,4 +34,9 @@ Public Class frmMovingRectangle
     Private Sub ExitToolStripMenuItem_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles ExitToolStripMenuItem.Click
         Application.Exit()
     End Sub
+
+    Private Sub NextToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NextToolStripMenuItem.Click
+        Me.Hide()
+        frmBouncingBall.Show()
+    End Sub
 End Class
