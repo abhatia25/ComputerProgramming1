@@ -65,4 +65,9 @@ Public Class frmDrawAFace
         'Draw mouth
         pictureBoxSurface.FillPie(pinkBrush, maxX \ 3 - 5, maxY \ 3 + 60, 80, 80, 0, -180)
     End Sub
+
+    Private Sub NextToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles NextToolStripMenuItem.Click
+        Me.Hide()
+        frmKicks.Show()
+    End Sub
 End Class

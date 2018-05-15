@@ -102,10 +102,22 @@
     <Compile Include="HotAirBalloon.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Kicks.Designer.vb">
+      <DependentUpon>Kicks.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Kicks.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Kite.Designer.vb">
       <DependentUpon>Kite.vb</DependentUpon>
     </Compile>
     <Compile Include="Kite.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Me!.Designer.vb">
+      <DependentUpon>Me!.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Me!.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MovingPie.Designer.vb">
@@ -142,10 +154,22 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Ship.Designer.vb">
+      <DependentUpon>Ship.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ship.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="StopLight.Designer.vb">
       <DependentUpon>StopLight.vb</DependentUpon>
     </Compile>
     <Compile Include="StopLight.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Talk.Designer.vb">
+      <DependentUpon>Talk.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Talk.vb">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
@@ -165,8 +189,14 @@
     <EmbeddedResource Include="HotAirBalloon.resx">
       <DependentUpon>HotAirBalloon.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Kicks.resx">
+      <DependentUpon>Kicks.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Kite.resx">
       <DependentUpon>Kite.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Me!.resx">
+      <DependentUpon>Me!.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MovingPie.resx">
       <DependentUpon>MovingPie.vb</DependentUpon>
@@ -183,8 +213,14 @@
     <EmbeddedResource Include="Shapes.resx">
       <DependentUpon>Shapes.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Ship.resx">
+      <DependentUpon>Ship.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="StopLight.resx">
       <DependentUpon>StopLight.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Talk.resx">
+      <DependentUpon>Talk.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -266,6 +302,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\kite1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kicks.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\talk2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\talk1.bmp" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
