@@ -37,7 +37,7 @@ Partial Class frmShip
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ExitToolStripMenuItem, Me.NextToolStripMenuItem, Me.ShowToolStripMenuItem, Me.HideToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(362, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(371, 24)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -69,7 +69,7 @@ Partial Class frmShip
         '
         Me.picImage.Location = New System.Drawing.Point(12, 27)
         Me.picImage.Name = "picImage"
-        Me.picImage.Size = New System.Drawing.Size(338, 316)
+        Me.picImage.Size = New System.Drawing.Size(346, 232)
         Me.picImage.TabIndex = 1
         Me.picImage.TabStop = False
         '
@@ -77,7 +77,7 @@ Partial Class frmShip
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(362, 355)
+        Me.ClientSize = New System.Drawing.Size(371, 269)
         Me.Controls.Add(Me.picImage)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1

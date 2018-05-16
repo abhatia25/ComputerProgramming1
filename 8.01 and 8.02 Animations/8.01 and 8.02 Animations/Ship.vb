@@ -13,26 +13,11 @@ Public Class frmShip
     End Sub
 
     Private Sub ShowToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ShowToolStripMenuItem.Click
-        Dim pictureBoxSurface As Graphics = Me.picImage.CreateGraphics
-        pictureBoxSurface.Clear(Me.BackColor)
-        Dim maxX As Integer = Me.picImage.Size.Width
-        Dim maxY As Integer = Me.picImage.Size.Height
-
-        'Define brushes
-        Dim darkBlueBrush As New SolidBrush(Color.DarkBlue)
-        Dim brownBrush As New SolidBrush(Color.Brown)
-        Dim blackBrush As New SolidBrush(Color.Black)
-        Dim whiteBrush As New SolidBrush(Color.White)
-
-        'Draw mast
-        Dim point1 As Single = maxX / 2
-        Dim point2 As Single = maxY
-        Dim point3 As Single = maxX / 2
-        Dim point4 As Single = maxY / 1.25
-        pictureBoxSurface.DrawLine(Pens.Black, point1, point2, point3, point4)
+        picImage.BackgroundImage = My.Resources.Capture1
+        picImage.BackgroundImageLayout = ImageLayout.Stretch
     End Sub
 
     Private Sub HideToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles HideToolStripMenuItem.Click
-
+        picImage.BackgroundImage = Nothing
     End Sub
 End Class
