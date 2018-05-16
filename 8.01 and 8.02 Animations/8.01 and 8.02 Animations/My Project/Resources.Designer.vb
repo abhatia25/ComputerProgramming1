@@ -61,6 +61,51 @@ Namespace My.Resources
         End Property
         
         '''<summary>
+        '''  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        '''</summary>
+        Friend ReadOnly Property ahem() As System.IO.UnmanagedMemoryStream
+            Get
+                Return ResourceManager.GetStream("ahem", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        '''</summary>
+        Friend ReadOnly Property air_raid() As System.IO.UnmanagedMemoryStream
+            Get
+                Return ResourceManager.GetStream("air_raid", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        '''</summary>
+        Friend ReadOnly Property Applause() As System.IO.UnmanagedMemoryStream
+            Get
+                Return ResourceManager.GetStream("Applause", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        '''</summary>
+        Friend ReadOnly Property arrow() As System.IO.UnmanagedMemoryStream
+            Get
+                Return ResourceManager.GetStream("arrow", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        '''</summary>
+        Friend ReadOnly Property baby_cry() As System.IO.UnmanagedMemoryStream
+            Get
+                Return ResourceManager.GetStream("baby_cry", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
         Friend ReadOnly Property ball0() As System.Drawing.Bitmap

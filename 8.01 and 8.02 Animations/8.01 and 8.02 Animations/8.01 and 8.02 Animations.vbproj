@@ -172,6 +172,12 @@
     <Compile Include="Talk.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="TestSounds.Designer.vb">
+      <DependentUpon>TestSounds.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TestSounds.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="100DiceRolls.resx">
@@ -221,6 +227,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Talk.resx">
       <DependentUpon>Talk.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestSounds.resx">
+      <DependentUpon>TestSounds.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -317,6 +326,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Capture.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Applause.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baby_cry.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ahem.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\air_raid.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
