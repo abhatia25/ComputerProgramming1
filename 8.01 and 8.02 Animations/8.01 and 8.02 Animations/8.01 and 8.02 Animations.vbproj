@@ -178,6 +178,12 @@
     <Compile Include="Talk.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="TestGraphics.Designer.vb">
+      <DependentUpon>TestGraphics.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TestGraphics.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="TestSounds.Designer.vb">
       <DependentUpon>TestSounds.vb</DependentUpon>
     </Compile>
@@ -236,6 +242,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Talk.resx">
       <DependentUpon>Talk.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestGraphics.resx">
+      <DependentUpon>TestGraphics.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TestSounds.resx">
       <DependentUpon>TestSounds.vb</DependentUpon>

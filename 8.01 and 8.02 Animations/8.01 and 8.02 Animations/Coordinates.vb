@@ -30,6 +30,6 @@ Public Class frmCoordinates
 
     Private Sub NextToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NextToolStripMenuItem.Click
         Me.Hide()
-
+        frmTestGraphics.Show()
     End Sub
 End Class
