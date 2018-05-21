@@ -30,8 +30,10 @@ Partial Class MainCasinoRoom
         Me.GAME5ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.DONEToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.picBauld = New System.Windows.Forms.PictureBox()
+        Me.picPayCoins = New System.Windows.Forms.PictureBox()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.picBauld, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picPayCoins, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'MenuStrip1
@@ -81,17 +83,30 @@ Partial Class MainCasinoRoom
         '
         'picBauld
         '
+        Me.picBauld.Image = Global.CasinoFinalProject.My.Resources.Resources.bauld
         Me.picBauld.Location = New System.Drawing.Point(12, 27)
         Me.picBauld.Name = "picBauld"
-        Me.picBauld.Size = New System.Drawing.Size(161, 223)
+        Me.picBauld.Size = New System.Drawing.Size(185, 223)
+        Me.picBauld.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picBauld.TabIndex = 1
         Me.picBauld.TabStop = False
+        '
+        'picPayCoins
+        '
+        Me.picPayCoins.Image = Global.CasinoFinalProject.My.Resources.Resources.PayCoins
+        Me.picPayCoins.Location = New System.Drawing.Point(203, 27)
+        Me.picPayCoins.Name = "picPayCoins"
+        Me.picPayCoins.Size = New System.Drawing.Size(213, 223)
+        Me.picPayCoins.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picPayCoins.TabIndex = 2
+        Me.picPayCoins.TabStop = False
         '
         'MainCasinoRoom
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(428, 262)
+        Me.Controls.Add(Me.picPayCoins)
         Me.Controls.Add(Me.picBauld)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
@@ -100,6 +115,7 @@ Partial Class MainCasinoRoom
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
         CType(Me.picBauld, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picPayCoins, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -112,4 +128,5 @@ Partial Class MainCasinoRoom
     Friend WithEvents GAME5ToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents DONEToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents picBauld As System.Windows.Forms.PictureBox
+    Friend WithEvents picPayCoins As PictureBox
 End Class

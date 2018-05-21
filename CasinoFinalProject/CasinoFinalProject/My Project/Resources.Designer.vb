@@ -61,6 +61,43 @@ Namespace My.Resources
         End Property
         
         '''<summary>
+        '''  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        '''</summary>
+        Friend ReadOnly Property Applause() As System.IO.UnmanagedMemoryStream
+            Get
+                Return ResourceManager.GetStream("Applause", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property bauld() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("bauld", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        '''</summary>
+        Friend ReadOnly Property card_shuffle() As System.IO.UnmanagedMemoryStream
+            Get
+                Return ResourceManager.GetStream("card_shuffle", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        '''</summary>
+        Friend ReadOnly Property card_snap() As System.IO.UnmanagedMemoryStream
+            Get
+                Return ResourceManager.GetStream("card_snap", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
         Friend ReadOnly Property card1() As System.Drawing.Bitmap
@@ -161,6 +198,33 @@ Namespace My.Resources
         End Property
         
         '''<summary>
+        '''  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        '''</summary>
+        Friend ReadOnly Property cash_register() As System.IO.UnmanagedMemoryStream
+            Get
+                Return ResourceManager.GetStream("cash_register", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        '''</summary>
+        Friend ReadOnly Property casino_background() As System.IO.UnmanagedMemoryStream
+            Get
+                Return ResourceManager.GetStream("casino_background", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        '''</summary>
+        Friend ReadOnly Property casino_cash_out() As System.IO.UnmanagedMemoryStream
+            Get
+                Return ResourceManager.GetStream("casino_cash_out", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
         Friend ReadOnly Property die1() As System.Drawing.Bitmap
@@ -227,6 +291,15 @@ Namespace My.Resources
             Get
                 Dim obj As Object = ResourceManager.GetObject("PayCoins", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        '''</summary>
+        Friend ReadOnly Property slot_cash_out() As System.IO.UnmanagedMemoryStream
+            Get
+                Return ResourceManager.GetStream("slot_cash_out", resourceCulture)
             End Get
         End Property
     End Module

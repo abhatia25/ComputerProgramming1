@@ -30,9 +30,11 @@ Partial Class frmDone
         '
         'picBauld
         '
-        Me.picBauld.Location = New System.Drawing.Point(12, 62)
+        Me.picBauld.Image = Global.CasinoFinalProject.My.Resources.Resources.bauld
+        Me.picBauld.Location = New System.Drawing.Point(12, 70)
         Me.picBauld.Name = "picBauld"
-        Me.picBauld.Size = New System.Drawing.Size(260, 202)
+        Me.picBauld.Size = New System.Drawing.Size(260, 194)
+        Me.picBauld.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picBauld.TabIndex = 0
         Me.picBauld.TabStop = False
         '
@@ -50,7 +52,7 @@ Partial Class frmDone
         Me.lblCongrats.Font = New System.Drawing.Font("Microsoft YaHei UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblCongrats.Location = New System.Drawing.Point(12, 9)
         Me.lblCongrats.Name = "lblCongrats"
-        Me.lblCongrats.Size = New System.Drawing.Size(260, 50)
+        Me.lblCongrats.Size = New System.Drawing.Size(260, 58)
         Me.lblCongrats.TabIndex = 2
         Me.lblCongrats.Text = "Congratulations, you have defeated the Bauld!" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
