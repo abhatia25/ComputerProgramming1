@@ -8,7 +8,7 @@ Public Class frmTestGraphics
 
     Private Sub NextToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NextToolStripMenuItem.Click
         Me.Hide()
-
+        frmDrawShapes.Show()
     End Sub
 
     Private Sub btnDrawNow_Click(sender As Object, e As EventArgs) Handles btnDrawNow.Click

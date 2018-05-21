@@ -90,6 +90,12 @@
     <Compile Include="ChangeImage.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="ClickIt.Designer.vb">
+      <DependentUpon>ClickIt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ClickIt.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Coordinates.Designer.vb">
       <DependentUpon>Coordinates.vb</DependentUpon>
     </Compile>
@@ -100,6 +106,12 @@
       <DependentUpon>DrawAFace.vb</DependentUpon>
     </Compile>
     <Compile Include="DrawAFace.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DrawShapes.Designer.vb">
+      <DependentUpon>DrawShapes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DrawShapes.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="HotAirBalloon.Designer.vb">
@@ -178,6 +190,12 @@
     <Compile Include="Talk.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="TestCurves.Designer.vb">
+      <DependentUpon>TestCurves.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TestCurves.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="TestGraphics.Designer.vb">
       <DependentUpon>TestGraphics.vb</DependentUpon>
     </Compile>
@@ -188,6 +206,12 @@
       <DependentUpon>TestSounds.vb</DependentUpon>
     </Compile>
     <Compile Include="TestSounds.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TurtleRun.Designer.vb">
+      <DependentUpon>TurtleRun.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TurtleRun.vb">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
@@ -201,11 +225,17 @@
     <EmbeddedResource Include="ChangeImage.resx">
       <DependentUpon>ChangeImage.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ClickIt.resx">
+      <DependentUpon>ClickIt.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Coordinates.resx">
       <DependentUpon>Coordinates.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DrawAFace.resx">
       <DependentUpon>DrawAFace.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DrawShapes.resx">
+      <DependentUpon>DrawShapes.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HotAirBalloon.resx">
       <DependentUpon>HotAirBalloon.vb</DependentUpon>
@@ -243,11 +273,17 @@
     <EmbeddedResource Include="Talk.resx">
       <DependentUpon>Talk.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="TestCurves.resx">
+      <DependentUpon>TestCurves.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TestGraphics.resx">
       <DependentUpon>TestGraphics.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TestSounds.resx">
       <DependentUpon>TestSounds.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TurtleRun.resx">
+      <DependentUpon>TurtleRun.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -359,6 +395,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\air_raid.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\greensquare.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue_triangle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\red_diamond.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pink-circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\turtle.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
