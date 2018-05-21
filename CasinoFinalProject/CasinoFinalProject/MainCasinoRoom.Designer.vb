@@ -29,11 +29,11 @@ Partial Class MainCasinoRoom
         Me.GAME4ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.GAME5ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.DONEToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.picBauld = New System.Windows.Forms.PictureBox()
         Me.picPayCoins = New System.Windows.Forms.PictureBox()
+        Me.picBauld = New System.Windows.Forms.PictureBox()
         Me.MenuStrip1.SuspendLayout()
-        CType(Me.picBauld, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picPayCoins, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picBauld, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'MenuStrip1
@@ -81,16 +81,6 @@ Partial Class MainCasinoRoom
         Me.DONEToolStripMenuItem.Size = New System.Drawing.Size(51, 20)
         Me.DONEToolStripMenuItem.Text = "DONE"
         '
-        'picBauld
-        '
-        Me.picBauld.Image = Global.CasinoFinalProject.My.Resources.Resources.bauld
-        Me.picBauld.Location = New System.Drawing.Point(12, 27)
-        Me.picBauld.Name = "picBauld"
-        Me.picBauld.Size = New System.Drawing.Size(185, 223)
-        Me.picBauld.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.picBauld.TabIndex = 1
-        Me.picBauld.TabStop = False
-        '
         'picPayCoins
         '
         Me.picPayCoins.Image = Global.CasinoFinalProject.My.Resources.Resources.PayCoins
@@ -100,6 +90,16 @@ Partial Class MainCasinoRoom
         Me.picPayCoins.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picPayCoins.TabIndex = 2
         Me.picPayCoins.TabStop = False
+        '
+        'picBauld
+        '
+        Me.picBauld.Image = Global.CasinoFinalProject.My.Resources.Resources.bauld
+        Me.picBauld.Location = New System.Drawing.Point(12, 27)
+        Me.picBauld.Name = "picBauld"
+        Me.picBauld.Size = New System.Drawing.Size(185, 223)
+        Me.picBauld.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picBauld.TabIndex = 1
+        Me.picBauld.TabStop = False
         '
         'MainCasinoRoom
         '
@@ -114,8 +114,8 @@ Partial Class MainCasinoRoom
         Me.Text = "Main Casino Room"
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
-        CType(Me.picBauld, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picPayCoins, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picBauld, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

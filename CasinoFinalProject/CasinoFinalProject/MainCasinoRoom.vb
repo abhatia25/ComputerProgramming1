@@ -7,4 +7,9 @@ Public Class MainCasinoRoom
         Me.Hide()
         frmDone.Show()
     End Sub
+
+    Private Sub MainCasinoRoom_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Timer.Show()
+        My.Computer.Audio.Play(My.Resources.casino_background, AudioPlayMode.BackgroundLoop)
+    End Sub
 End Class

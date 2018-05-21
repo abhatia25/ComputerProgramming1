@@ -252,6 +252,27 @@
   <ItemGroup>
     <None Include="Resources\bauld.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\casino_background.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\casino_cash_out.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\card_snap.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\card_shuffle.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cash_register.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\slot_cash_out.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Applause.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
