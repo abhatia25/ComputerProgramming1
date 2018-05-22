@@ -31,6 +31,7 @@ Partial Class frmLucky7
         Me.lblWinner2 = New System.Windows.Forms.Label()
         Me.lblWinner3 = New System.Windows.Forms.Label()
         Me.picMoney = New System.Windows.Forms.PictureBox()
+        Me.btnNext = New System.Windows.Forms.Button()
         CType(Me.picMoney, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -129,11 +130,22 @@ Partial Class frmLucky7
         Me.picMoney.TabStop = False
         Me.picMoney.Visible = False
         '
+        'btnNext
+        '
+        Me.btnNext.Location = New System.Drawing.Point(417, 271)
+        Me.btnNext.Name = "btnNext"
+        Me.btnNext.Size = New System.Drawing.Size(75, 23)
+        Me.btnNext.TabIndex = 10
+        Me.btnNext.Text = "Next"
+        Me.btnNext.UseVisualStyleBackColor = True
+        Me.btnNext.Visible = False
+        '
         'frmLucky7
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(504, 306)
+        Me.Controls.Add(Me.btnNext)
         Me.Controls.Add(Me.lblWinner3)
         Me.Controls.Add(Me.lblWinner2)
         Me.Controls.Add(Me.lblWinner1)
@@ -159,5 +171,6 @@ Partial Class frmLucky7
     Friend WithEvents lblWinner1 As System.Windows.Forms.Label
     Friend WithEvents lblWinner2 As System.Windows.Forms.Label
     Friend WithEvents lblWinner3 As System.Windows.Forms.Label
+    Friend WithEvents btnNext As System.Windows.Forms.Button
 
 End Class

@@ -43,6 +43,7 @@ Partial Class frmMastermind
         Me.rad = New System.Windows.Forms.RadioButton()
         Me.btnCheckGuess = New System.Windows.Forms.Button()
         Me.lblResults = New System.Windows.Forms.Label()
+        Me.btnNext = New System.Windows.Forms.Button()
         Me.grpPeg1.SuspendLayout()
         Me.grpPeg2.SuspendLayout()
         Me.grpPeg3.SuspendLayout()
@@ -268,11 +269,22 @@ Partial Class frmMastermind
         Me.lblResults.TabIndex = 6
         Me.lblResults.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'btnNext
+        '
+        Me.btnNext.Location = New System.Drawing.Point(433, 287)
+        Me.btnNext.Name = "btnNext"
+        Me.btnNext.Size = New System.Drawing.Size(75, 23)
+        Me.btnNext.TabIndex = 7
+        Me.btnNext.Text = "Next"
+        Me.btnNext.UseVisualStyleBackColor = True
+        Me.btnNext.Visible = False
+        '
         'frmMastermind
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(520, 320)
+        Me.Controls.Add(Me.btnNext)
         Me.Controls.Add(Me.lblResults)
         Me.Controls.Add(Me.btnCheckGuess)
         Me.Controls.Add(Me.grpPeg2)
@@ -310,4 +322,5 @@ Partial Class frmMastermind
     Friend WithEvents radPeg3Yellow As System.Windows.Forms.RadioButton
     Friend WithEvents btnCheckGuess As System.Windows.Forms.Button
     Friend WithEvents lblResults As System.Windows.Forms.Label
+    Friend WithEvents btnNext As System.Windows.Forms.Button
 End Class

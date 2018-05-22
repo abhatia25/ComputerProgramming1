@@ -30,6 +30,7 @@ Public Class frmMastermind
 
         If (numPegsCorrect = NUM_PEGS And numColorsCorrect = NUM_PEGS) Then
             MessageBox.Show("You Win!")
+            btnNext.Visible = True
         End If
     End Sub
 
@@ -167,4 +168,10 @@ Public Class frmMastermind
 
         Return numCorrect
     End Function
+
+    Private Sub btnNext_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnNext.Click
+        GlobalVariables.Game3Passed = True
+        Me.Hide()
+        frmMainCasinoRoom.Show()
+    End Sub
 End Class

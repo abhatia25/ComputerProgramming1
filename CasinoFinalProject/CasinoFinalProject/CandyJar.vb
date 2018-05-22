@@ -12,11 +12,12 @@ Public Class frmCandyJar
 
         If Double.TryParse(strUserGuess, dblUserGuess) Then
             If intCorrectAnswer = dblUserGuess Then
-                lblResult.Text = "You guessed it!"
+                lblResult.Text = "You guessed " & dblUserGuess & vbCrLf & "You guessed it!"
+                btnNext.Visible = True
             ElseIf intCorrectAnswer > dblUserGuess Then
-                lblResult.Text = "Too low"
+                lblResult.Text = "You guessed " & dblUserGuess & vbCrLf & "Too low"
             Else
-                lblResult.Text = "Too high"
+                lblResult.Text = "You guessed " & dblUserGuess & vbCrLf & "Too high"
             End If
         Else
             MessageBox.Show("Please enter a number")
@@ -26,5 +27,11 @@ Public Class frmCandyJar
     Private Sub frmCandyJar_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         Randomize()
         intCorrectAnswer = Rnd() * 300
+    End Sub
+
+    Private Sub btnNext_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnNext.Click
+        GlobalVariables.Game1Passed = True
+        Me.Hide()
+        frmMainCasinoRoom.Show()
     End Sub
 End Class

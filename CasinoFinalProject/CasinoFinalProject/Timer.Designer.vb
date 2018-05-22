@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Timer
+Partial Class frmTimer
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -29,7 +29,7 @@ Partial Class Timer
         '
         'tmrTimeLeft
         '
-        Me.tmrTimeLeft.Interval = 5000
+        Me.tmrTimeLeft.Interval = 2000
         '
         'prgTimeLeft
         '
@@ -39,13 +39,13 @@ Partial Class Timer
         Me.prgTimeLeft.TabIndex = 0
         Me.prgTimeLeft.Value = 100
         '
-        'Timer
+        'frmTimer
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(491, 231)
         Me.Controls.Add(Me.prgTimeLeft)
-        Me.Name = "Timer"
+        Me.Name = "frmTimer"
         Me.Text = "Timer"
         Me.ResumeLayout(False)
 

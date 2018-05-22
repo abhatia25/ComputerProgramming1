@@ -33,6 +33,7 @@ Partial Class frmCardGame
         Me.picPlayerCard3 = New System.Windows.Forms.PictureBox()
         Me.picPlayerCard2 = New System.Windows.Forms.PictureBox()
         Me.picPlayerCard1 = New System.Windows.Forms.PictureBox()
+        Me.btnNext = New System.Windows.Forms.Button()
         CType(Me.picComputerCard3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picComputerCard2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picComputerCard1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -136,11 +137,22 @@ Partial Class frmCardGame
         Me.picPlayerCard1.TabIndex = 1
         Me.picPlayerCard1.TabStop = False
         '
+        'btnNext
+        '
+        Me.btnNext.Location = New System.Drawing.Point(377, 474)
+        Me.btnNext.Name = "btnNext"
+        Me.btnNext.Size = New System.Drawing.Size(75, 23)
+        Me.btnNext.TabIndex = 12
+        Me.btnNext.Text = "Next"
+        Me.btnNext.UseVisualStyleBackColor = True
+        Me.btnNext.Visible = False
+        '
         'frmCardGame
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(464, 509)
+        Me.Controls.Add(Me.btnNext)
         Me.Controls.Add(Me.lblScore)
         Me.Controls.Add(Me.lblWinner)
         Me.Controls.Add(Me.lblComputerPoints)
@@ -174,4 +186,5 @@ Partial Class frmCardGame
     Friend WithEvents lblComputerPoints As System.Windows.Forms.Label
     Friend WithEvents lblWinner As System.Windows.Forms.Label
     Friend WithEvents lblScore As System.Windows.Forms.Label
+    Friend WithEvents btnNext As System.Windows.Forms.Button
 End Class

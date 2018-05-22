@@ -22,31 +22,16 @@ Partial Class frmDiceGame
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.txtRisk = New System.Windows.Forms.TextBox()
-        Me.lblRiskPrompt = New System.Windows.Forms.Label()
         Me.btnRollDice = New System.Windows.Forms.Button()
         Me.lblPoints = New System.Windows.Forms.Label()
         Me.picDie2 = New System.Windows.Forms.PictureBox()
         Me.picDie1 = New System.Windows.Forms.PictureBox()
+        Me.txtRisk = New System.Windows.Forms.TextBox()
+        Me.lblRiskPrompt = New System.Windows.Forms.Label()
+        Me.btnNext = New System.Windows.Forms.Button()
         CType(Me.picDie2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picDie1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'txtRisk
-        '
-        Me.txtRisk.Location = New System.Drawing.Point(267, 41)
-        Me.txtRisk.Name = "txtRisk"
-        Me.txtRisk.Size = New System.Drawing.Size(100, 20)
-        Me.txtRisk.TabIndex = 3
-        '
-        'lblRiskPrompt
-        '
-        Me.lblRiskPrompt.Location = New System.Drawing.Point(161, 41)
-        Me.lblRiskPrompt.Name = "lblRiskPrompt"
-        Me.lblRiskPrompt.Size = New System.Drawing.Size(100, 20)
-        Me.lblRiskPrompt.TabIndex = 4
-        Me.lblRiskPrompt.Text = "Risk:"
-        Me.lblRiskPrompt.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'btnRollDice
         '
@@ -83,11 +68,38 @@ Partial Class frmDiceGame
         Me.picDie1.TabIndex = 1
         Me.picDie1.TabStop = False
         '
+        'txtRisk
+        '
+        Me.txtRisk.Location = New System.Drawing.Point(267, 41)
+        Me.txtRisk.Name = "txtRisk"
+        Me.txtRisk.Size = New System.Drawing.Size(100, 20)
+        Me.txtRisk.TabIndex = 3
+        '
+        'lblRiskPrompt
+        '
+        Me.lblRiskPrompt.Location = New System.Drawing.Point(161, 41)
+        Me.lblRiskPrompt.Name = "lblRiskPrompt"
+        Me.lblRiskPrompt.Size = New System.Drawing.Size(100, 20)
+        Me.lblRiskPrompt.TabIndex = 4
+        Me.lblRiskPrompt.Text = "Risk:"
+        Me.lblRiskPrompt.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'btnNext
+        '
+        Me.btnNext.Location = New System.Drawing.Point(310, 298)
+        Me.btnNext.Name = "btnNext"
+        Me.btnNext.Size = New System.Drawing.Size(75, 23)
+        Me.btnNext.TabIndex = 7
+        Me.btnNext.Text = "Next"
+        Me.btnNext.UseVisualStyleBackColor = True
+        Me.btnNext.Visible = False
+        '
         'frmDiceGame
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(397, 333)
+        Me.Controls.Add(Me.btnNext)
         Me.Controls.Add(Me.lblPoints)
         Me.Controls.Add(Me.btnRollDice)
         Me.Controls.Add(Me.lblRiskPrompt)
@@ -104,8 +116,9 @@ Partial Class frmDiceGame
     End Sub
     Friend WithEvents picDie1 As System.Windows.Forms.PictureBox
     Friend WithEvents picDie2 As System.Windows.Forms.PictureBox
-    Friend WithEvents txtRisk As System.Windows.Forms.TextBox
-    Friend WithEvents lblRiskPrompt As System.Windows.Forms.Label
     Friend WithEvents btnRollDice As System.Windows.Forms.Button
     Friend WithEvents lblPoints As System.Windows.Forms.Label
+    Friend WithEvents txtRisk As System.Windows.Forms.TextBox
+    Friend WithEvents lblRiskPrompt As System.Windows.Forms.Label
+    Friend WithEvents btnNext As System.Windows.Forms.Button
 End Class

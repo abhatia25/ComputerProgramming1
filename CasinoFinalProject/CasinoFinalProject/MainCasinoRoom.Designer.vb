@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class MainCasinoRoom
+Partial Class frmMainCasinoRoom
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -28,9 +28,11 @@ Partial Class MainCasinoRoom
         Me.GAME3ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.GAME4ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.GAME5ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.DONEToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.STOREToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.picPayCoins = New System.Windows.Forms.PictureBox()
         Me.picBauld = New System.Windows.Forms.PictureBox()
+        Me.GAME6ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.btnInventory = New System.Windows.Forms.Button()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.picPayCoins, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picBauld, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -38,10 +40,10 @@ Partial Class MainCasinoRoom
         '
         'MenuStrip1
         '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.GAME1ToolStripMenuItem, Me.GAME2ToolStripMenuItem, Me.GAME3ToolStripMenuItem, Me.GAME4ToolStripMenuItem, Me.GAME5ToolStripMenuItem, Me.DONEToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.GAME1ToolStripMenuItem, Me.GAME2ToolStripMenuItem, Me.GAME3ToolStripMenuItem, Me.GAME4ToolStripMenuItem, Me.GAME5ToolStripMenuItem, Me.GAME6ToolStripMenuItem, Me.STOREToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(428, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(436, 24)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -75,16 +77,16 @@ Partial Class MainCasinoRoom
         Me.GAME5ToolStripMenuItem.Size = New System.Drawing.Size(61, 20)
         Me.GAME5ToolStripMenuItem.Text = "GAME 5"
         '
-        'DONEToolStripMenuItem
+        'STOREToolStripMenuItem
         '
-        Me.DONEToolStripMenuItem.Name = "DONEToolStripMenuItem"
-        Me.DONEToolStripMenuItem.Size = New System.Drawing.Size(51, 20)
-        Me.DONEToolStripMenuItem.Text = "DONE"
+        Me.STOREToolStripMenuItem.Name = "STOREToolStripMenuItem"
+        Me.STOREToolStripMenuItem.Size = New System.Drawing.Size(54, 20)
+        Me.STOREToolStripMenuItem.Text = "STORE"
         '
         'picPayCoins
         '
         Me.picPayCoins.Image = Global.CasinoFinalProject.My.Resources.Resources.PayCoins
-        Me.picPayCoins.Location = New System.Drawing.Point(203, 27)
+        Me.picPayCoins.Location = New System.Drawing.Point(215, 27)
         Me.picPayCoins.Name = "picPayCoins"
         Me.picPayCoins.Size = New System.Drawing.Size(213, 223)
         Me.picPayCoins.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -96,21 +98,37 @@ Partial Class MainCasinoRoom
         Me.picBauld.Image = Global.CasinoFinalProject.My.Resources.Resources.bauld
         Me.picBauld.Location = New System.Drawing.Point(12, 27)
         Me.picBauld.Name = "picBauld"
-        Me.picBauld.Size = New System.Drawing.Size(185, 223)
+        Me.picBauld.Size = New System.Drawing.Size(197, 223)
         Me.picBauld.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picBauld.TabIndex = 1
         Me.picBauld.TabStop = False
         '
-        'MainCasinoRoom
+        'GAME6ToolStripMenuItem
+        '
+        Me.GAME6ToolStripMenuItem.Name = "GAME6ToolStripMenuItem"
+        Me.GAME6ToolStripMenuItem.Size = New System.Drawing.Size(61, 20)
+        Me.GAME6ToolStripMenuItem.Text = "GAME 6"
+        '
+        'btnInventory
+        '
+        Me.btnInventory.Location = New System.Drawing.Point(12, 256)
+        Me.btnInventory.Name = "btnInventory"
+        Me.btnInventory.Size = New System.Drawing.Size(75, 23)
+        Me.btnInventory.TabIndex = 3
+        Me.btnInventory.Text = "Inventory"
+        Me.btnInventory.UseVisualStyleBackColor = True
+        '
+        'frmMainCasinoRoom
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(428, 262)
+        Me.ClientSize = New System.Drawing.Size(436, 290)
+        Me.Controls.Add(Me.btnInventory)
         Me.Controls.Add(Me.picPayCoins)
         Me.Controls.Add(Me.picBauld)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
-        Me.Name = "MainCasinoRoom"
+        Me.Name = "frmMainCasinoRoom"
         Me.Text = "Main Casino Room"
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
@@ -126,7 +144,9 @@ Partial Class MainCasinoRoom
     Friend WithEvents GAME3ToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents GAME4ToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents GAME5ToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents DONEToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents STOREToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents picBauld As System.Windows.Forms.PictureBox
     Friend WithEvents picPayCoins As PictureBox
+    Friend WithEvents GAME6ToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents btnInventory As System.Windows.Forms.Button
 End Class

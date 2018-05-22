@@ -20,16 +20,13 @@ Public Class frmCardGame
 
         If Winner(playerTotal, computerTotal) = "Player" Then
             Me.lblWinner.Text = "You won!"
-            Call UpdateScore(playerScore)
+            btnNext.Visible = True
         ElseIf Winner(playerTotal, computerTotal) = "Computer" Then
             Me.lblWinner.Text = "Computer won!"
-            Call UpdateScore(computerScore)
         Else
             Me.lblWinner.Text = "It's a draw!"
-            Call UpdateScore(drawsScore)
         End If
 
-        Call ShowScore(Me.lblScore, playerScore, computerScore, drawsScore)
     End Sub
 
     'Displays a card corresponding to a random number in the range 1 to 10.
@@ -88,22 +85,9 @@ Public Class frmCardGame
         End If
     End Function
 
-    'Updates the score of winner.
-    '
-    'post: winner score has been increased by WIN_POINTS.
-    '
-    Sub UpdateScore(ByRef winner As Integer)
-        Const WIN_POINTS As Integer = 1
-        winner += WIN_POINTS
-    End Sub
-
-    'Displays the current score of Player, Computer, and draws.
-    '
-    'post: scores have been displayed in a label.
-    '
-    Sub ShowScore(ByRef lblLabel As Label, ByVal playerScore As Integer, ByVal compScore As Integer, ByVal drawsScore As Integer)
-        lblScore.Text = "You: " & playerScore & vbCrLf _
-            & "Computer: " & compScore & vbCrLf _
-            & "Draws: " & drawsScore
+    Private Sub btnNext_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnNext.Click
+        GlobalVariables.Game6Passed = True
+        Me.Hide()
+        frmMainCasinoRoom.Show()
     End Sub
 End Class

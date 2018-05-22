@@ -1,7 +1,7 @@
 ﻿'Aditya Bhatia
 'Timer
 '5/21/2018
-Public Class Timer
+Public Class frmTimer
 
     Private Sub tmrTimeLeft_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles tmrTimeLeft.Tick
         If prgTimeLeft.Value > 0 Then
@@ -12,7 +12,7 @@ Public Class Timer
 
     End Sub
 
-    Private Sub Timer_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub Timer_Load(ByVal sender As Object, ByVal e As EventArgs) Handles MyBase.Load
         prgTimeLeft.Value = 100
         tmrTimeLeft.Start()
     End Sub

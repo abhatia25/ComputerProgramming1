@@ -28,6 +28,7 @@ Partial Class frmRockPaperScissors
         Me.radRock = New System.Windows.Forms.RadioButton()
         Me.btnGo = New System.Windows.Forms.Button()
         Me.lblWinner = New System.Windows.Forms.Label()
+        Me.btnNext = New System.Windows.Forms.Button()
         Me.grpPlayerChoice.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -93,11 +94,22 @@ Partial Class frmRockPaperScissors
         Me.lblWinner.TabIndex = 3
         Me.lblWinner.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'btnNext
+        '
+        Me.btnNext.Location = New System.Drawing.Point(135, 230)
+        Me.btnNext.Name = "btnNext"
+        Me.btnNext.Size = New System.Drawing.Size(75, 23)
+        Me.btnNext.TabIndex = 4
+        Me.btnNext.Text = "Next"
+        Me.btnNext.UseVisualStyleBackColor = True
+        Me.btnNext.Visible = False
+        '
         'frmRockPaperScissors
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(222, 262)
+        Me.Controls.Add(Me.btnNext)
         Me.Controls.Add(Me.lblWinner)
         Me.Controls.Add(Me.btnGo)
         Me.Controls.Add(Me.grpPlayerChoice)
@@ -114,4 +126,5 @@ Partial Class frmRockPaperScissors
     Friend WithEvents radRock As System.Windows.Forms.RadioButton
     Friend WithEvents btnGo As System.Windows.Forms.Button
     Friend WithEvents lblWinner As System.Windows.Forms.Label
+    Friend WithEvents btnNext As System.Windows.Forms.Button
 End Class

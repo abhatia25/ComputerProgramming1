@@ -26,6 +26,7 @@ Partial Class frmCandyJar
         Me.txtJellyBeansGuess = New System.Windows.Forms.TextBox()
         Me.btnGuess = New System.Windows.Forms.Button()
         Me.lblResult = New System.Windows.Forms.Label()
+        Me.btnNext = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'lblJellyBeansPrompt
@@ -63,11 +64,22 @@ Partial Class frmCandyJar
         Me.lblResult.Text = "" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         Me.lblResult.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'btnNext
+        '
+        Me.btnNext.Location = New System.Drawing.Point(243, 96)
+        Me.btnNext.Name = "btnNext"
+        Me.btnNext.Size = New System.Drawing.Size(75, 23)
+        Me.btnNext.TabIndex = 5
+        Me.btnNext.Text = "Next"
+        Me.btnNext.UseVisualStyleBackColor = True
+        Me.btnNext.Visible = False
+        '
         'frmCandyJar
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(330, 128)
+        Me.Controls.Add(Me.btnNext)
         Me.Controls.Add(Me.lblResult)
         Me.Controls.Add(Me.btnGuess)
         Me.Controls.Add(Me.txtJellyBeansGuess)
@@ -82,4 +94,5 @@ Partial Class frmCandyJar
     Friend WithEvents txtJellyBeansGuess As System.Windows.Forms.TextBox
     Friend WithEvents btnGuess As System.Windows.Forms.Button
     Friend WithEvents lblResult As System.Windows.Forms.Label
+    Friend WithEvents btnNext As System.Windows.Forms.Button
 End Class

@@ -14,6 +14,7 @@ Public Class frmDiceGame
                 totalPoints -= risk
             Else                        'player wins
                 totalPoints += (2 * risk)
+                btnNext.Visible = True
             End If
 
             Me.lblPoints.Text = "Total points = " & totalPoints
@@ -91,4 +92,10 @@ Public Class frmDiceGame
             Return True
         End If
     End Function
+
+    Private Sub btnNext_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnNext.Click
+        GlobalVariables.Game5Passed = True
+        Me.Hide()
+        frmMainCasinoRoom.Show()
+    End Sub
 End Class

@@ -103,6 +103,12 @@
       <DependentUpon>Introduction.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Inventory.Designer.vb">
+      <DependentUpon>Inventory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Lucky7.designer.vb">
       <DependentUpon>Lucky7.vb</DependentUpon>
     </Compile>
@@ -142,6 +148,12 @@
     <Compile Include="RockPaperScissors.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Store.Designer.vb">
+      <DependentUpon>Store.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Store.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Timer.Designer.vb">
       <DependentUpon>Timer.vb</DependentUpon>
     </Compile>
@@ -165,6 +177,9 @@
     <EmbeddedResource Include="Introduction.resx">
       <DependentUpon>Introduction.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Inventory.resx">
+      <DependentUpon>Inventory.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Lucky7.resx">
       <DependentUpon>Lucky7.vb</DependentUpon>
     </EmbeddedResource>
@@ -182,6 +197,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="RockPaperScissors.resx">
       <DependentUpon>RockPaperScissors.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Store.resx">
+      <DependentUpon>Store.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Timer.resx">
       <DependentUpon>Timer.vb</DependentUpon>
@@ -272,6 +290,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Applause.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopping_cart.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
