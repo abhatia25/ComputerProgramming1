@@ -31,6 +31,7 @@ Partial Class frmStore
         Me.btnDone = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.btnAddToCart = New System.Windows.Forms.Button()
+        Me.btnClear = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -54,7 +55,7 @@ Partial Class frmStore
         'cstItems
         '
         Me.cstItems.FormattingEnabled = True
-        Me.cstItems.Items.AddRange(New Object() {"Candy", "$200 Gift Card", "$300 Gift Card"})
+        Me.cstItems.Items.AddRange(New Object() {"Candy", "$200 Gift Card", "$300 Gift Card", "$100 Gift Card", "iPhone", "Xbox 360", "PS4"})
         Me.cstItems.Location = New System.Drawing.Point(12, 80)
         Me.cstItems.Name = "cstItems"
         Me.cstItems.Size = New System.Drawing.Size(236, 124)
@@ -108,18 +109,28 @@ Partial Class frmStore
         '
         'btnAddToCart
         '
-        Me.btnAddToCart.Location = New System.Drawing.Point(90, 257)
+        Me.btnAddToCart.Location = New System.Drawing.Point(12, 257)
         Me.btnAddToCart.Name = "btnAddToCart"
         Me.btnAddToCart.Size = New System.Drawing.Size(75, 23)
         Me.btnAddToCart.TabIndex = 8
         Me.btnAddToCart.Text = "Add To Cart"
         Me.btnAddToCart.UseVisualStyleBackColor = True
         '
+        'btnClear
+        '
+        Me.btnClear.Location = New System.Drawing.Point(173, 257)
+        Me.btnClear.Name = "btnClear"
+        Me.btnClear.Size = New System.Drawing.Size(75, 23)
+        Me.btnClear.TabIndex = 9
+        Me.btnClear.Text = "Clear"
+        Me.btnClear.UseVisualStyleBackColor = True
+        '
         'frmStore
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(480, 371)
+        Me.Controls.Add(Me.btnClear)
         Me.Controls.Add(Me.btnAddToCart)
         Me.Controls.Add(Me.btnDone)
         Me.Controls.Add(Me.lblPrompt2)
@@ -145,4 +156,5 @@ Partial Class frmStore
     Friend WithEvents lblPrompt2 As System.Windows.Forms.Label
     Friend WithEvents btnDone As System.Windows.Forms.Button
     Friend WithEvents btnAddToCart As Button
+    Friend WithEvents btnClear As Button
 End Class
