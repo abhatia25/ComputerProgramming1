@@ -35,6 +35,7 @@ Public Class frmCardGame
     'total score has been updated.
     '
     Sub DealCard(ByRef picCard As PictureBox, ByRef total As Integer)
+        My.Computer.Audio.Play(My.Resources.card_shuffle, AudioPlayMode.Background)
         Dim cardNum As Integer = RndInt(1, 10)
         Select Case cardNum
             Case 1
@@ -58,7 +59,7 @@ Public Class frmCardGame
             Case 10
                 picCard.BackgroundImage = My.Resources.card10
         End Select
-
+        My.Computer.Audio.Play(My.Resources.card_snap, AudioPlayMode.Background)
         total += cardNum
     End Sub
 
@@ -87,6 +88,7 @@ Public Class frmCardGame
 
     Private Sub btnNext_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnNext.Click
         GlobalVariables.Game6Passed = True
+        GlobalVariables.Money += 500
         Me.Hide()
         frmMainCasinoRoom.Show()
     End Sub

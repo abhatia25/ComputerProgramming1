@@ -171,6 +171,7 @@ Public Class frmMastermind
 
     Private Sub btnNext_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnNext.Click
         GlobalVariables.Game3Passed = True
+        GlobalVariables.Money += 500
         Me.Hide()
         frmMainCasinoRoom.Show()
     End Sub

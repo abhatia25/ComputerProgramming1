@@ -43,6 +43,7 @@ Public Class frmRockPaperScissors
         If blnPlayerWin = True Then
             btnNext.Visible = True
             GlobalVariables.Game2Passed = True
+            GlobalVariables.Money += 500
         End If
     End Sub
 

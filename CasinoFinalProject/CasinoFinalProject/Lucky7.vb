@@ -13,7 +13,11 @@ Public Class frmLucky7
         lblNumber3.Text = CStr(Int(Rnd() * 10))
         If (lblNumber1.Text = "7") Or (lblNumber2.Text = "7") Or (lblNumber3.Text = "7") Then
             picMoney.Visible = True
+        End If
+        If (lblNumber1.Text = "7") Or (lblNumber2.Text = "7") Or (lblNumber3.Text = "7") Then
             My.Computer.Audio.Play(My.Resources.cash_register, AudioPlayMode.Background)
+        End If
+        If (lblNumber1.Text = "7") Or (lblNumber2.Text = "7") Or (lblNumber3.Text = "7") Then
             lblWinner1.Text = "You Win!" 'Winning message
             btnNext.Visible = True
         End If
@@ -21,6 +25,7 @@ Public Class frmLucky7
 
     Private Sub btnNext_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnNext.Click
         GlobalVariables.Game4Passed = True
+        GlobalVariables.Money += 500
         Me.Hide()
         frmMainCasinoRoom.Show()
     End Sub

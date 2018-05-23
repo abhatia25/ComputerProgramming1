@@ -29,7 +29,7 @@ Partial Class frmTimer
         '
         'tmrTimeLeft
         '
-        Me.tmrTimeLeft.Interval = 2000
+        Me.tmrTimeLeft.Interval = 3000
         '
         'prgTimeLeft
         '

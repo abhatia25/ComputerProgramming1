@@ -14,13 +14,15 @@ Public Class frmDiceGame
                 totalPoints -= risk
             Else                        'player wins
                 totalPoints += (2 * risk)
-                btnNext.Visible = True
             End If
 
             Me.lblPoints.Text = "Total points = " & totalPoints
 
             If totalPoints = 0 Then
                 MessageBox.Show("Game Over.")
+            ElseIf totalPoints > 1500 Then
+                MessageBox.Show("You Win!")
+                btnNext.Visible = True
             End If
         End If
     End Sub
@@ -95,6 +97,7 @@ Public Class frmDiceGame
 
     Private Sub btnNext_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnNext.Click
         GlobalVariables.Game5Passed = True
+        GlobalVariables.Money += 500
         Me.Hide()
         frmMainCasinoRoom.Show()
     End Sub
