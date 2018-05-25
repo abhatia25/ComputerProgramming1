@@ -24,11 +24,11 @@ Partial Class frmDiceGame
     Private Sub InitializeComponent()
         Me.btnRollDice = New System.Windows.Forms.Button()
         Me.lblPoints = New System.Windows.Forms.Label()
-        Me.picDie2 = New System.Windows.Forms.PictureBox()
-        Me.picDie1 = New System.Windows.Forms.PictureBox()
         Me.txtRisk = New System.Windows.Forms.TextBox()
         Me.lblRiskPrompt = New System.Windows.Forms.Label()
         Me.btnNext = New System.Windows.Forms.Button()
+        Me.picDie2 = New System.Windows.Forms.PictureBox()
+        Me.picDie1 = New System.Windows.Forms.PictureBox()
         CType(Me.picDie2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picDie1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -49,24 +49,6 @@ Partial Class frmDiceGame
         Me.lblPoints.Size = New System.Drawing.Size(373, 68)
         Me.lblPoints.TabIndex = 6
         Me.lblPoints.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'picDie2
-        '
-        Me.picDie2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.picDie2.Location = New System.Drawing.Point(239, 102)
-        Me.picDie2.Name = "picDie2"
-        Me.picDie2.Size = New System.Drawing.Size(146, 138)
-        Me.picDie2.TabIndex = 2
-        Me.picDie2.TabStop = False
-        '
-        'picDie1
-        '
-        Me.picDie1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.picDie1.Location = New System.Drawing.Point(12, 102)
-        Me.picDie1.Name = "picDie1"
-        Me.picDie1.Size = New System.Drawing.Size(146, 138)
-        Me.picDie1.TabIndex = 1
-        Me.picDie1.TabStop = False
         '
         'txtRisk
         '
@@ -93,6 +75,24 @@ Partial Class frmDiceGame
         Me.btnNext.Text = "Next"
         Me.btnNext.UseVisualStyleBackColor = True
         Me.btnNext.Visible = False
+        '
+        'picDie2
+        '
+        Me.picDie2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.picDie2.Location = New System.Drawing.Point(239, 102)
+        Me.picDie2.Name = "picDie2"
+        Me.picDie2.Size = New System.Drawing.Size(146, 138)
+        Me.picDie2.TabIndex = 2
+        Me.picDie2.TabStop = False
+        '
+        'picDie1
+        '
+        Me.picDie1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.picDie1.Location = New System.Drawing.Point(12, 102)
+        Me.picDie1.Name = "picDie1"
+        Me.picDie1.Size = New System.Drawing.Size(146, 138)
+        Me.picDie1.TabIndex = 1
+        Me.picDie1.TabStop = False
         '
         'frmDiceGame
         '

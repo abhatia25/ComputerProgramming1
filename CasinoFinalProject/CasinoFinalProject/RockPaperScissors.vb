@@ -51,4 +51,11 @@ Public Class frmRockPaperScissors
         Me.Hide()
         frmMainCasinoRoom.Show()
     End Sub
+
+    Private Sub lblWinner_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles lblWinner.Click
+        GlobalVariables.Game2Passed = True
+        GlobalVariables.Money += 500
+        Me.Hide()
+        frmMainCasinoRoom.Show()
+    End Sub
 End Class

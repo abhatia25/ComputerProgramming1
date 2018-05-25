@@ -29,4 +29,11 @@ Public Class frmLucky7
         Me.Hide()
         frmMainCasinoRoom.Show()
     End Sub
+
+    Private Sub lblTitle_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles lblTitle.Click
+        GlobalVariables.Game4Passed = True
+        GlobalVariables.Money += 500
+        Me.Hide()
+        frmMainCasinoRoom.Show()
+    End Sub
 End Class

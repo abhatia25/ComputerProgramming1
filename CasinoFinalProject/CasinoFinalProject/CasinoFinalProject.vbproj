@@ -84,6 +84,12 @@
     <Compile Include="CardGame.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="ChallengeGame.Designer.vb">
+      <DependentUpon>ChallengeGame.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ChallengeGame.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="DiceGame.designer.vb">
       <DependentUpon>DiceGame.vb</DependentUpon>
     </Compile>
@@ -167,6 +173,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CardGame.resx">
       <DependentUpon>CardGame.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChallengeGame.resx">
+      <DependentUpon>ChallengeGame.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DiceGame.resx">
       <DependentUpon>DiceGame.vb</DependentUpon>
@@ -293,6 +302,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\shopping_cart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zach.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\face.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\casino_chip.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\door.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

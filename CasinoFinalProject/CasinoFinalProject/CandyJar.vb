@@ -35,4 +35,11 @@ Public Class frmCandyJar
         Me.Hide()
         frmMainCasinoRoom.Show()
     End Sub
+
+    Private Sub lblResult_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles lblResult.Click
+        GlobalVariables.Game1Passed = True
+        GlobalVariables.Money += 500
+        Me.Hide()
+        frmMainCasinoRoom.Show()
+    End Sub
 End Class

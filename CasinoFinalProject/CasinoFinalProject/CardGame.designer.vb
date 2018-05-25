@@ -27,13 +27,13 @@ Partial Class frmCardGame
         Me.lblComputerPoints = New System.Windows.Forms.Label()
         Me.lblWinner = New System.Windows.Forms.Label()
         Me.lblScore = New System.Windows.Forms.Label()
+        Me.btnNext = New System.Windows.Forms.Button()
         Me.picComputerCard3 = New System.Windows.Forms.PictureBox()
         Me.picComputerCard2 = New System.Windows.Forms.PictureBox()
         Me.picComputerCard1 = New System.Windows.Forms.PictureBox()
         Me.picPlayerCard3 = New System.Windows.Forms.PictureBox()
         Me.picPlayerCard2 = New System.Windows.Forms.PictureBox()
         Me.picPlayerCard1 = New System.Windows.Forms.PictureBox()
-        Me.btnNext = New System.Windows.Forms.Button()
         CType(Me.picComputerCard3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picComputerCard2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picComputerCard1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -82,6 +82,16 @@ Partial Class frmCardGame
         Me.lblScore.Size = New System.Drawing.Size(147, 61)
         Me.lblScore.TabIndex = 11
         Me.lblScore.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'btnNext
+        '
+        Me.btnNext.Location = New System.Drawing.Point(377, 474)
+        Me.btnNext.Name = "btnNext"
+        Me.btnNext.Size = New System.Drawing.Size(75, 23)
+        Me.btnNext.TabIndex = 12
+        Me.btnNext.Text = "Next"
+        Me.btnNext.UseVisualStyleBackColor = True
+        Me.btnNext.Visible = False
         '
         'picComputerCard3
         '
@@ -136,16 +146,6 @@ Partial Class frmCardGame
         Me.picPlayerCard1.Size = New System.Drawing.Size(114, 142)
         Me.picPlayerCard1.TabIndex = 1
         Me.picPlayerCard1.TabStop = False
-        '
-        'btnNext
-        '
-        Me.btnNext.Location = New System.Drawing.Point(377, 474)
-        Me.btnNext.Name = "btnNext"
-        Me.btnNext.Size = New System.Drawing.Size(75, 23)
-        Me.btnNext.TabIndex = 12
-        Me.btnNext.Text = "Next"
-        Me.btnNext.UseVisualStyleBackColor = True
-        Me.btnNext.Visible = False
         '
         'frmCardGame
         '

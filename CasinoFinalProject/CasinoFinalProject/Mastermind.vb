@@ -175,4 +175,11 @@ Public Class frmMastermind
         Me.Hide()
         frmMainCasinoRoom.Show()
     End Sub
+
+    Private Sub lblResults_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles lblResults.Click
+        GlobalVariables.Game3Passed = True
+        GlobalVariables.Money += 500
+        Me.Hide()
+        frmMainCasinoRoom.Show()
+    End Sub
 End Class

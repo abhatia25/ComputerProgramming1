@@ -92,4 +92,11 @@ Public Class frmCardGame
         Me.Hide()
         frmMainCasinoRoom.Show()
     End Sub
+
+    Private Sub picComputerCard2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles picComputerCard2.Click, picComputerCard1.Click, picComputerCard3.Click
+        GlobalVariables.Game6Passed = True
+        GlobalVariables.Money += 500
+        Me.Hide()
+        frmMainCasinoRoom.Show()
+    End Sub
 End Class

@@ -14,7 +14,7 @@ Public Class frmStore
 
     Private Sub btnDone_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnDone.Click
         Me.Hide()
-        frmDone.Show()
+        frmChallengeGame.Show()
     End Sub
 
     Private Sub btnAddToCart_Click(sender As Object, e As EventArgs) Handles btnAddToCart.Click

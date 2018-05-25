@@ -25,8 +25,8 @@ Partial Class frmIntroduction
         Me.btnDone = New System.Windows.Forms.Button()
         Me.lblIntro = New System.Windows.Forms.Label()
         Me.lblTitle = New System.Windows.Forms.Label()
-        Me.txtName = New System.Windows.Forms.TextBox()
         Me.lblName = New System.Windows.Forms.Label()
+        Me.txtName = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'btnDone
@@ -58,13 +58,6 @@ Partial Class frmIntroduction
         Me.lblTitle.Text = "Bauld Casino"
         Me.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'txtName
-        '
-        Me.txtName.Location = New System.Drawing.Point(106, 190)
-        Me.txtName.Name = "txtName"
-        Me.txtName.Size = New System.Drawing.Size(166, 20)
-        Me.txtName.TabIndex = 3
-        '
         'lblName
         '
         Me.lblName.Location = New System.Drawing.Point(12, 188)
@@ -73,6 +66,13 @@ Partial Class frmIntroduction
         Me.lblName.TabIndex = 4
         Me.lblName.Text = "Name:"
         Me.lblName.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'txtName
+        '
+        Me.txtName.Location = New System.Drawing.Point(106, 190)
+        Me.txtName.Name = "txtName"
+        Me.txtName.Size = New System.Drawing.Size(166, 20)
+        Me.txtName.TabIndex = 3
         '
         'frmIntroduction
         '
@@ -93,7 +93,7 @@ Partial Class frmIntroduction
     Friend WithEvents btnDone As System.Windows.Forms.Button
     Friend WithEvents lblIntro As System.Windows.Forms.Label
     Friend WithEvents lblTitle As System.Windows.Forms.Label
-    Friend WithEvents txtName As System.Windows.Forms.TextBox
     Friend WithEvents lblName As System.Windows.Forms.Label
+    Friend WithEvents txtName As System.Windows.Forms.TextBox
 
 End Class
